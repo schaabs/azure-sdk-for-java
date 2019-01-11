@@ -38,7 +38,7 @@ public class KeyVerifyParameters {
     private Base64Url signature;
 
     /**
-     * Get the algorithm value.
+     * Get the signing/verification algorithm. For more information on possible algorithm types, see JsonWebKeySignatureAlgorithm. Possible values include: 'PS256', 'PS384', 'PS512', 'RS256', 'RS384', 'RS512', 'RSNULL', 'ES256', 'ES384', 'ES512', 'ES256K'.
      *
      * @return the algorithm value
      */
@@ -47,7 +47,7 @@ public class KeyVerifyParameters {
     }
 
     /**
-     * Set the algorithm value.
+     * Set the signing/verification algorithm. For more information on possible algorithm types, see JsonWebKeySignatureAlgorithm. Possible values include: 'PS256', 'PS384', 'PS512', 'RS256', 'RS384', 'RS512', 'RSNULL', 'ES256', 'ES384', 'ES512', 'ES256K'.
      *
      * @param algorithm the algorithm value to set
      * @return the KeyVerifyParameters object itself.
@@ -58,7 +58,7 @@ public class KeyVerifyParameters {
     }
 
     /**
-     * Get the digest value.
+     * Get the digest used for signing.
      *
      * @return the digest value
      */
@@ -70,7 +70,7 @@ public class KeyVerifyParameters {
     }
 
     /**
-     * Set the digest value.
+     * Set the digest used for signing.
      *
      * @param digest the digest value to set
      * @return the KeyVerifyParameters object itself.
@@ -85,7 +85,7 @@ public class KeyVerifyParameters {
     }
 
     /**
-     * Get the signature value.
+     * Get the signature to be verified.
      *
      * @return the signature value
      */
@@ -97,7 +97,7 @@ public class KeyVerifyParameters {
     }
 
     /**
-     * Set the signature value.
+     * Set the signature to be verified.
      *
      * @param signature the signature value to set
      * @return the KeyVerifyParameters object itself.

@@ -9,6 +9,7 @@
 package com.microsoft.azure.keyvault.models;
 
 import com.microsoft.azure.keyvault.webkey.JsonWebKeyType;
+import com.microsoft.azure.keyvault.webkey.JsonWebKeyCurveName;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
@@ -48,7 +49,7 @@ public class KeyProperties {
     private JsonWebKeyCurveName curve;
 
     /**
-     * Get the exportable value.
+     * Get indicates if the private key can be exported.
      *
      * @return the exportable value
      */
@@ -57,7 +58,7 @@ public class KeyProperties {
     }
 
     /**
-     * Set the exportable value.
+     * Set indicates if the private key can be exported.
      *
      * @param exportable the exportable value to set
      * @return the KeyProperties object itself.
@@ -68,7 +69,7 @@ public class KeyProperties {
     }
 
     /**
-     * Get the keyType value.
+     * Get the type of key pair to be used for the certificate. Possible values include: 'EC', 'EC-HSM', 'RSA', 'RSA-HSM', 'oct'.
      *
      * @return the keyType value
      */
@@ -77,7 +78,7 @@ public class KeyProperties {
     }
 
     /**
-     * Set the keyType value.
+     * Set the type of key pair to be used for the certificate. Possible values include: 'EC', 'EC-HSM', 'RSA', 'RSA-HSM', 'oct'.
      *
      * @param keyType the keyType value to set
      * @return the KeyProperties object itself.
@@ -88,7 +89,7 @@ public class KeyProperties {
     }
 
     /**
-     * Get the keySize value.
+     * Get the key size in bits. For example: 2048, 3072, or 4096 for RSA.
      *
      * @return the keySize value
      */
@@ -97,7 +98,7 @@ public class KeyProperties {
     }
 
     /**
-     * Set the keySize value.
+     * Set the key size in bits. For example: 2048, 3072, or 4096 for RSA.
      *
      * @param keySize the keySize value to set
      * @return the KeyProperties object itself.
@@ -108,7 +109,7 @@ public class KeyProperties {
     }
 
     /**
-     * Get the reuseKey value.
+     * Get indicates if the same key pair will be used on certificate renewal.
      *
      * @return the reuseKey value
      */
@@ -117,7 +118,7 @@ public class KeyProperties {
     }
 
     /**
-     * Set the reuseKey value.
+     * Set indicates if the same key pair will be used on certificate renewal.
      *
      * @param reuseKey the reuseKey value to set
      * @return the KeyProperties object itself.
@@ -128,7 +129,7 @@ public class KeyProperties {
     }
 
     /**
-     * Get the curve value.
+     * Get elliptic curve name. For valid values, see JsonWebKeyCurveName. Possible values include: 'P-256', 'P-384', 'P-521', 'P-256K'.
      *
      * @return the curve value
      */
@@ -137,7 +138,7 @@ public class KeyProperties {
     }
 
     /**
-     * Set the curve value.
+     * Set elliptic curve name. For valid values, see JsonWebKeyCurveName. Possible values include: 'P-256', 'P-384', 'P-521', 'P-256K'.
      *
      * @param curve the curve value to set
      * @return the KeyProperties object itself.

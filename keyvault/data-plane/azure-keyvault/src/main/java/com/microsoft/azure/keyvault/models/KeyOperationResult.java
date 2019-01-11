@@ -28,7 +28,7 @@ public class KeyOperationResult {
     private Base64Url result;
 
     /**
-     * Get the kid value.
+     * Get key identifier.
      *
      * @return the kid value
      */

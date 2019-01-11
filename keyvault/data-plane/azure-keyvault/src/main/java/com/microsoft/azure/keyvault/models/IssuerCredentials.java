@@ -27,7 +27,7 @@ public class IssuerCredentials {
     private String password;
 
     /**
-     * Get the accountId value.
+     * Get the user name/account name/account id.
      *
      * @return the accountId value
      */
@@ -36,7 +36,7 @@ public class IssuerCredentials {
     }
 
     /**
-     * Set the accountId value.
+     * Set the user name/account name/account id.
      *
      * @param accountId the accountId value to set
      * @return the IssuerCredentials object itself.
@@ -47,7 +47,7 @@ public class IssuerCredentials {
     }
 
     /**
-     * Get the password value.
+     * Get the password/secret/account key.
      *
      * @return the password value
      */
@@ -56,7 +56,7 @@ public class IssuerCredentials {
     }
 
     /**
-     * Set the password value.
+     * Set the password/secret/account key.
      *
      * @param password the password value to set
      * @return the IssuerCredentials object itself.

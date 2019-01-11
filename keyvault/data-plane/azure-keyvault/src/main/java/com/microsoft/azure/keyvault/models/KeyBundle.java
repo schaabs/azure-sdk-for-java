@@ -42,7 +42,7 @@ public class KeyBundle extends com.microsoft.azure.keyvault.models.custom.KeyBun
     private Boolean managed;
 
     /**
-     * Get the key value.
+     * Get the Json web key.
      *
      * @return the key value
      */
@@ -51,7 +51,7 @@ public class KeyBundle extends com.microsoft.azure.keyvault.models.custom.KeyBun
     }
 
     /**
-     * Set the key value.
+     * Set the Json web key.
      *
      * @param key the key value to set
      * @return the KeyBundle object itself.
@@ -62,7 +62,7 @@ public class KeyBundle extends com.microsoft.azure.keyvault.models.custom.KeyBun
     }
 
     /**
-     * Get the attributes value.
+     * Get the key management attributes.
      *
      * @return the attributes value
      */
@@ -71,7 +71,7 @@ public class KeyBundle extends com.microsoft.azure.keyvault.models.custom.KeyBun
     }
 
     /**
-     * Set the attributes value.
+     * Set the key management attributes.
      *
      * @param attributes the attributes value to set
      * @return the KeyBundle object itself.
@@ -82,7 +82,7 @@ public class KeyBundle extends com.microsoft.azure.keyvault.models.custom.KeyBun
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */
@@ -91,7 +91,7 @@ public class KeyBundle extends com.microsoft.azure.keyvault.models.custom.KeyBun
     }
 
     /**
-     * Set the tags value.
+     * Set application specific metadata in the form of key-value pairs.
      *
      * @param tags the tags value to set
      * @return the KeyBundle object itself.
@@ -102,7 +102,7 @@ public class KeyBundle extends com.microsoft.azure.keyvault.models.custom.KeyBun
     }
 
     /**
-     * Get the managed value.
+     * Get true if the key's lifetime is managed by key vault. If this is a key backing a certificate, then managed will be true.
      *
      * @return the managed value
      */

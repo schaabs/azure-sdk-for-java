@@ -47,7 +47,7 @@ public class Attributes {
     private Long updated;
 
     /**
-     * Get the enabled value.
+     * Get determines whether the object is enabled.
      *
      * @return the enabled value
      */
@@ -56,7 +56,7 @@ public class Attributes {
     }
 
     /**
-     * Set the enabled value.
+     * Set determines whether the object is enabled.
      *
      * @param enabled the enabled value to set
      * @return the Attributes object itself.
@@ -67,7 +67,7 @@ public class Attributes {
     }
 
     /**
-     * Get the notBefore value.
+     * Get not before date in UTC.
      *
      * @return the notBefore value
      */
@@ -79,7 +79,7 @@ public class Attributes {
     }
 
     /**
-     * Set the notBefore value.
+     * Set not before date in UTC.
      *
      * @param notBefore the notBefore value to set
      * @return the Attributes object itself.
@@ -94,7 +94,7 @@ public class Attributes {
     }
 
     /**
-     * Get the expires value.
+     * Get expiry date in UTC.
      *
      * @return the expires value
      */
@@ -106,7 +106,7 @@ public class Attributes {
     }
 
     /**
-     * Set the expires value.
+     * Set expiry date in UTC.
      *
      * @param expires the expires value to set
      * @return the Attributes object itself.
@@ -121,7 +121,7 @@ public class Attributes {
     }
 
     /**
-     * Get the created value.
+     * Get creation time in UTC.
      *
      * @return the created value
      */
@@ -133,7 +133,7 @@ public class Attributes {
     }
 
     /**
-     * Get the updated value.
+     * Get last updated time in UTC.
      *
      * @return the updated value
      */

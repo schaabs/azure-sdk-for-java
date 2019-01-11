@@ -22,7 +22,7 @@ public class CertificateRestoreParameters {
     private Base64Url certificateBundleBackup;
 
     /**
-     * Get the certificateBundleBackup value.
+     * Get the backup blob associated with a certificate bundle.
      *
      * @return the certificateBundleBackup value
      */
@@ -34,7 +34,7 @@ public class CertificateRestoreParameters {
     }
 
     /**
-     * Set the certificateBundleBackup value.
+     * Set the backup blob associated with a certificate bundle.
      *
      * @param certificateBundleBackup the certificateBundleBackup value to set
      * @return the CertificateRestoreParameters object itself.

@@ -21,7 +21,7 @@ public class SecretProperties {
     private String contentType;
 
     /**
-     * Get the contentType value.
+     * Get the media type (MIME type).
      *
      * @return the contentType value
      */
@@ -30,7 +30,7 @@ public class SecretProperties {
     }
 
     /**
-     * Set the contentType value.
+     * Set the media type (MIME type).
      *
      * @param contentType the contentType value to set
      * @return the SecretProperties object itself.

@@ -30,7 +30,7 @@ public class KeyOperationsParameters {
     private Base64Url value;
 
     /**
-     * Get the algorithm value.
+     * Get algorithm identifier. Possible values include: 'RSA-OAEP', 'RSA-OAEP-256', 'RSA1_5'.
      *
      * @return the algorithm value
      */
@@ -39,7 +39,7 @@ public class KeyOperationsParameters {
     }
 
     /**
-     * Set the algorithm value.
+     * Set algorithm identifier. Possible values include: 'RSA-OAEP', 'RSA-OAEP-256', 'RSA1_5'.
      *
      * @param algorithm the algorithm value to set
      * @return the KeyOperationsParameters object itself.

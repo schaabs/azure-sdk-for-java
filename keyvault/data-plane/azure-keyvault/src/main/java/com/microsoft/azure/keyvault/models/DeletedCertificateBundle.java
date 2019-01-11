@@ -37,7 +37,7 @@ public class DeletedCertificateBundle extends CertificateBundle {
     private Long deletedDate;
 
     /**
-     * Get the recoveryId value.
+     * Get the url of the recovery object, used to identify and recover the deleted certificate.
      *
      * @return the recoveryId value
      */
@@ -46,7 +46,7 @@ public class DeletedCertificateBundle extends CertificateBundle {
     }
 
     /**
-     * Set the recoveryId value.
+     * Set the url of the recovery object, used to identify and recover the deleted certificate.
      *
      * @param recoveryId the recoveryId value to set
      * @return the DeletedCertificateBundle object itself.
@@ -57,7 +57,7 @@ public class DeletedCertificateBundle extends CertificateBundle {
     }
 
     /**
-     * Get the scheduledPurgeDate value.
+     * Get the time when the certificate is scheduled to be purged, in UTC.
      *
      * @return the scheduledPurgeDate value
      */
@@ -69,7 +69,7 @@ public class DeletedCertificateBundle extends CertificateBundle {
     }
 
     /**
-     * Get the deletedDate value.
+     * Get the time when the certificate was deleted, in UTC.
      *
      * @return the deletedDate value
      */

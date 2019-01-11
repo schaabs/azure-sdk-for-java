@@ -22,7 +22,7 @@ public class BackupStorageResult {
     private Base64Url value;
 
     /**
-     * Get the value value.
+     * Get the backup blob containing the backed up storage account.
      *
      * @return the value value
      */

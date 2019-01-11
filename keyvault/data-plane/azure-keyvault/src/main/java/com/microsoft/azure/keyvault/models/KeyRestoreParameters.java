@@ -22,7 +22,7 @@ public class KeyRestoreParameters {
     private Base64Url keyBundleBackup;
 
     /**
-     * Get the keyBundleBackup value.
+     * Get the backup blob associated with a key bundle.
      *
      * @return the keyBundleBackup value
      */
@@ -34,7 +34,7 @@ public class KeyRestoreParameters {
     }
 
     /**
-     * Set the keyBundleBackup value.
+     * Set the backup blob associated with a key bundle.
      *
      * @param keyBundleBackup the keyBundleBackup value to set
      * @return the KeyRestoreParameters object itself.

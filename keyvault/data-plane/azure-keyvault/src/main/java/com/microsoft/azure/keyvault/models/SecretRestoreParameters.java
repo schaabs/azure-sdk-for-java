@@ -22,7 +22,7 @@ public class SecretRestoreParameters {
     private Base64Url secretBundleBackup;
 
     /**
-     * Get the secretBundleBackup value.
+     * Get the backup blob associated with a secret bundle.
      *
      * @return the secretBundleBackup value
      */
@@ -34,7 +34,7 @@ public class SecretRestoreParameters {
     }
 
     /**
-     * Set the secretBundleBackup value.
+     * Set the backup blob associated with a secret bundle.
      *
      * @param secretBundleBackup the secretBundleBackup value to set
      * @return the SecretRestoreParameters object itself.

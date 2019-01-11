@@ -37,7 +37,7 @@ public class DeletedStorageBundle extends StorageBundle {
     private Long deletedDate;
 
     /**
-     * Get the recoveryId value.
+     * Get the url of the recovery object, used to identify and recover the deleted storage account.
      *
      * @return the recoveryId value
      */
@@ -46,7 +46,7 @@ public class DeletedStorageBundle extends StorageBundle {
     }
 
     /**
-     * Set the recoveryId value.
+     * Set the url of the recovery object, used to identify and recover the deleted storage account.
      *
      * @param recoveryId the recoveryId value to set
      * @return the DeletedStorageBundle object itself.
@@ -57,7 +57,7 @@ public class DeletedStorageBundle extends StorageBundle {
     }
 
     /**
-     * Get the scheduledPurgeDate value.
+     * Get the time when the storage account is scheduled to be purged, in UTC.
      *
      * @return the scheduledPurgeDate value
      */
@@ -69,7 +69,7 @@ public class DeletedStorageBundle extends StorageBundle {
     }
 
     /**
-     * Get the deletedDate value.
+     * Get the time when the storage account was deleted, in UTC.
      *
      * @return the deletedDate value
      */

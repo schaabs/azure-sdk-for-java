@@ -22,7 +22,7 @@ public class Action {
     private ActionType actionType;
 
     /**
-     * Get the actionType value.
+     * Get the type of the action. Possible values include: 'EmailContacts', 'AutoRenew'.
      *
      * @return the actionType value
      */
@@ -31,7 +31,7 @@ public class Action {
     }
 
     /**
-     * Set the actionType value.
+     * Set the type of the action. Possible values include: 'EmailContacts', 'AutoRenew'.
      *
      * @param actionType the actionType value to set
      * @return the Action object itself.

@@ -21,7 +21,7 @@ public class PendingCertificateSigningRequestResult {
     private String value;
 
     /**
-     * Get the value value.
+     * Get the pending certificate signing request as Base64 encoded string.
      *
      * @return the value value
      */

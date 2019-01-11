@@ -36,7 +36,7 @@ public class DeletedSecretItem extends SecretItem {
     private Long deletedDate;
 
     /**
-     * Get the recoveryId value.
+     * Get the url of the recovery object, used to identify and recover the deleted secret.
      *
      * @return the recoveryId value
      */
@@ -45,7 +45,7 @@ public class DeletedSecretItem extends SecretItem {
     }
 
     /**
-     * Set the recoveryId value.
+     * Set the url of the recovery object, used to identify and recover the deleted secret.
      *
      * @param recoveryId the recoveryId value to set
      * @return the DeletedSecretItem object itself.
@@ -56,7 +56,7 @@ public class DeletedSecretItem extends SecretItem {
     }
 
     /**
-     * Get the scheduledPurgeDate value.
+     * Get the time when the secret is scheduled to be purged, in UTC.
      *
      * @return the scheduledPurgeDate value
      */
@@ -68,7 +68,7 @@ public class DeletedSecretItem extends SecretItem {
     }
 
     /**
-     * Get the deletedDate value.
+     * Get the time when the secret was deleted, in UTC.
      *
      * @return the deletedDate value
      */

@@ -47,7 +47,7 @@ public class SasDefinitionAttributes {
     private DeletionRecoveryLevel recoveryLevel;
 
     /**
-     * Get the enabled value.
+     * Get the enabled state of the object.
      *
      * @return the enabled value
      */
@@ -56,7 +56,7 @@ public class SasDefinitionAttributes {
     }
 
     /**
-     * Set the enabled value.
+     * Set the enabled state of the object.
      *
      * @param enabled the enabled value to set
      * @return the SasDefinitionAttributes object itself.
@@ -67,7 +67,7 @@ public class SasDefinitionAttributes {
     }
 
     /**
-     * Get the created value.
+     * Get creation time in UTC.
      *
      * @return the created value
      */
@@ -79,7 +79,7 @@ public class SasDefinitionAttributes {
     }
 
     /**
-     * Get the updated value.
+     * Get last updated time in UTC.
      *
      * @return the updated value
      */
@@ -91,7 +91,7 @@ public class SasDefinitionAttributes {
     }
 
     /**
-     * Get the recoveryLevel value.
+     * Get reflects the deletion recovery level currently in effect for SAS definitions in the current vault. If it contains 'Purgeable' the SAS definition can be permanently deleted by a privileged user; otherwise, only the system can purge the SAS definition, at the end of the retention interval. Possible values include: 'Purgeable', 'Recoverable+Purgeable', 'Recoverable', 'Recoverable+ProtectedSubscription'.
      *
      * @return the recoveryLevel value
      */

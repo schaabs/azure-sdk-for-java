@@ -30,7 +30,7 @@ public class Trigger {
     private Integer daysBeforeExpiry;
 
     /**
-     * Get the lifetimePercentage value.
+     * Get percentage of lifetime at which to trigger. Value should be between 1 and 99.
      *
      * @return the lifetimePercentage value
      */
@@ -39,7 +39,7 @@ public class Trigger {
     }
 
     /**
-     * Set the lifetimePercentage value.
+     * Set percentage of lifetime at which to trigger. Value should be between 1 and 99.
      *
      * @param lifetimePercentage the lifetimePercentage value to set
      * @return the Trigger object itself.
@@ -50,7 +50,7 @@ public class Trigger {
     }
 
     /**
-     * Get the daysBeforeExpiry value.
+     * Get days before expiry to attempt renewal. Value should be between 1 and validity_in_months multiplied by 27. If validity_in_months is 36, then value should be between 1 and 972 (36 * 27).
      *
      * @return the daysBeforeExpiry value
      */
@@ -59,7 +59,7 @@ public class Trigger {
     }
 
     /**
-     * Set the daysBeforeExpiry value.
+     * Set days before expiry to attempt renewal. Value should be between 1 and validity_in_months multiplied by 27. If validity_in_months is 36, then value should be between 1 and 972 (36 * 27).
      *
      * @param daysBeforeExpiry the daysBeforeExpiry value to set
      * @return the Trigger object itself.

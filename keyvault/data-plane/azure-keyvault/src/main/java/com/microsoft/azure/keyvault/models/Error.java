@@ -33,7 +33,7 @@ public class Error {
     private Error innerError;
 
     /**
-     * Get the code value.
+     * Get the error code.
      *
      * @return the code value
      */
@@ -42,7 +42,7 @@ public class Error {
     }
 
     /**
-     * Get the message value.
+     * Get the error message.
      *
      * @return the message value
      */

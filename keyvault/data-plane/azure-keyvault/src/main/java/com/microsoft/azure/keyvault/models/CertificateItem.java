@@ -41,7 +41,7 @@ public class CertificateItem {
     private Base64Url x509Thumbprint;
 
     /**
-     * Get the id value.
+     * Get certificate identifier.
      *
      * @return the id value
      */
@@ -50,7 +50,7 @@ public class CertificateItem {
     }
 
     /**
-     * Set the id value.
+     * Set certificate identifier.
      *
      * @param id the id value to set
      * @return the CertificateItem object itself.
@@ -61,7 +61,7 @@ public class CertificateItem {
     }
 
     /**
-     * Get the attributes value.
+     * Get the certificate management attributes.
      *
      * @return the attributes value
      */
@@ -70,7 +70,7 @@ public class CertificateItem {
     }
 
     /**
-     * Set the attributes value.
+     * Set the certificate management attributes.
      *
      * @param attributes the attributes value to set
      * @return the CertificateItem object itself.
@@ -81,7 +81,7 @@ public class CertificateItem {
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */
@@ -90,7 +90,7 @@ public class CertificateItem {
     }
 
     /**
-     * Set the tags value.
+     * Set application specific metadata in the form of key-value pairs.
      *
      * @param tags the tags value to set
      * @return the CertificateItem object itself.
@@ -101,7 +101,7 @@ public class CertificateItem {
     }
 
     /**
-     * Get the x509Thumbprint value.
+     * Get thumbprint of the certificate.
      *
      * @return the x509Thumbprint value
      */
@@ -113,7 +113,7 @@ public class CertificateItem {
     }
 
     /**
-     * Set the x509Thumbprint value.
+     * Set thumbprint of the certificate.
      *
      * @param x509Thumbprint the x509Thumbprint value to set
      * @return the CertificateItem object itself.

@@ -37,7 +37,7 @@ public class DeletedSasDefinitionBundle extends SasDefinitionBundle {
     private Long deletedDate;
 
     /**
-     * Get the recoveryId value.
+     * Get the url of the recovery object, used to identify and recover the deleted SAS definition.
      *
      * @return the recoveryId value
      */
@@ -46,7 +46,7 @@ public class DeletedSasDefinitionBundle extends SasDefinitionBundle {
     }
 
     /**
-     * Set the recoveryId value.
+     * Set the url of the recovery object, used to identify and recover the deleted SAS definition.
      *
      * @param recoveryId the recoveryId value to set
      * @return the DeletedSasDefinitionBundle object itself.
@@ -57,7 +57,7 @@ public class DeletedSasDefinitionBundle extends SasDefinitionBundle {
     }
 
     /**
-     * Get the scheduledPurgeDate value.
+     * Get the time when the SAS definition is scheduled to be purged, in UTC.
      *
      * @return the scheduledPurgeDate value
      */
@@ -69,7 +69,7 @@ public class DeletedSasDefinitionBundle extends SasDefinitionBundle {
     }
 
     /**
-     * Get the deletedDate value.
+     * Get the time when the SAS definition was deleted, in UTC.
      *
      * @return the deletedDate value
      */

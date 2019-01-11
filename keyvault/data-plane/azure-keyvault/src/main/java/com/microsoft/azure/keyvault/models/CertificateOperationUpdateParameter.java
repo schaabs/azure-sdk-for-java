@@ -21,7 +21,7 @@ public class CertificateOperationUpdateParameter {
     private boolean cancellationRequested;
 
     /**
-     * Get the cancellationRequested value.
+     * Get indicates if cancellation was requested on the certificate operation.
      *
      * @return the cancellationRequested value
      */
@@ -30,7 +30,7 @@ public class CertificateOperationUpdateParameter {
     }
 
     /**
-     * Set the cancellationRequested value.
+     * Set indicates if cancellation was requested on the certificate operation.
      *
      * @param cancellationRequested the cancellationRequested value to set
      * @return the CertificateOperationUpdateParameter object itself.

@@ -27,7 +27,7 @@ public class AdministratorDetails {
     private String lastName;
 
     /**
-     * Email addresss.
+     * Email address.
      */
     @JsonProperty(value = "email")
     private String emailAddress;
@@ -39,7 +39,7 @@ public class AdministratorDetails {
     private String phone;
 
     /**
-     * Get the firstName value.
+     * Get first name.
      *
      * @return the firstName value
      */
@@ -48,7 +48,7 @@ public class AdministratorDetails {
     }
 
     /**
-     * Set the firstName value.
+     * Set first name.
      *
      * @param firstName the firstName value to set
      * @return the AdministratorDetails object itself.
@@ -59,7 +59,7 @@ public class AdministratorDetails {
     }
 
     /**
-     * Get the lastName value.
+     * Get last name.
      *
      * @return the lastName value
      */
@@ -68,7 +68,7 @@ public class AdministratorDetails {
     }
 
     /**
-     * Set the lastName value.
+     * Set last name.
      *
      * @param lastName the lastName value to set
      * @return the AdministratorDetails object itself.
@@ -79,7 +79,7 @@ public class AdministratorDetails {
     }
 
     /**
-     * Get the emailAddress value.
+     * Get email address.
      *
      * @return the emailAddress value
      */
@@ -88,7 +88,7 @@ public class AdministratorDetails {
     }
 
     /**
-     * Set the emailAddress value.
+     * Set email address.
      *
      * @param emailAddress the emailAddress value to set
      * @return the AdministratorDetails object itself.
@@ -99,7 +99,7 @@ public class AdministratorDetails {
     }
 
     /**
-     * Get the phone value.
+     * Get phone number.
      *
      * @return the phone value
      */
@@ -108,7 +108,7 @@ public class AdministratorDetails {
     }
 
     /**
-     * Set the phone value.
+     * Set phone number.
      *
      * @param phone the phone value to set
      * @return the AdministratorDetails object itself.

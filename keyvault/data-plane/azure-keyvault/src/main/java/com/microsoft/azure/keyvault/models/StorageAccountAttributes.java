@@ -46,7 +46,7 @@ public class StorageAccountAttributes {
     private DeletionRecoveryLevel recoveryLevel;
 
     /**
-     * Get the enabled value.
+     * Get the enabled state of the object.
      *
      * @return the enabled value
      */
@@ -55,7 +55,7 @@ public class StorageAccountAttributes {
     }
 
     /**
-     * Set the enabled value.
+     * Set the enabled state of the object.
      *
      * @param enabled the enabled value to set
      * @return the StorageAccountAttributes object itself.
@@ -66,7 +66,7 @@ public class StorageAccountAttributes {
     }
 
     /**
-     * Get the created value.
+     * Get creation time in UTC.
      *
      * @return the created value
      */
@@ -78,7 +78,7 @@ public class StorageAccountAttributes {
     }
 
     /**
-     * Get the updated value.
+     * Get last updated time in UTC.
      *
      * @return the updated value
      */
@@ -90,7 +90,7 @@ public class StorageAccountAttributes {
     }
 
     /**
-     * Get the recoveryLevel value.
+     * Get reflects the deletion recovery level currently in effect for storage accounts in the current vault. If it contains 'Purgeable' the storage account can be permanently deleted by a privileged user; otherwise, only the system can purge the storage account, at the end of the retention interval. Possible values include: 'Purgeable', 'Recoverable+Purgeable', 'Recoverable', 'Recoverable+ProtectedSubscription'.
      *
      * @return the recoveryLevel value
      */

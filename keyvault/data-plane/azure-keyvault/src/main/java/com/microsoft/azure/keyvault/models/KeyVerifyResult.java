@@ -21,7 +21,7 @@ public class KeyVerifyResult {
     private Boolean value;
 
     /**
-     * Get the value value.
+     * Get true if the signature is verified, otherwise false.
      *
      * @return the value value
      */

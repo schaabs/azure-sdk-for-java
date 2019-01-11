@@ -71,7 +71,7 @@ public class CertificateBundle extends com.microsoft.azure.keyvault.models.custo
     private Map<String, String> tags;
 
     /**
-     * Get the id value.
+     * Get the certificate id.
      *
      * @return the id value
      */
@@ -80,7 +80,7 @@ public class CertificateBundle extends com.microsoft.azure.keyvault.models.custo
     }
 
     /**
-     * Get the kid value.
+     * Get the key id.
      *
      * @return the kid value
      */
@@ -89,7 +89,7 @@ public class CertificateBundle extends com.microsoft.azure.keyvault.models.custo
     }
 
     /**
-     * Get the sid value.
+     * Get the secret id.
      *
      * @return the sid value
      */
@@ -98,7 +98,7 @@ public class CertificateBundle extends com.microsoft.azure.keyvault.models.custo
     }
 
     /**
-     * Get the x509Thumbprint value.
+     * Get thumbprint of the certificate.
      *
      * @return the x509Thumbprint value
      */
@@ -110,7 +110,7 @@ public class CertificateBundle extends com.microsoft.azure.keyvault.models.custo
     }
 
     /**
-     * Get the policy value.
+     * Get the management policy.
      *
      * @return the policy value
      */
@@ -119,7 +119,7 @@ public class CertificateBundle extends com.microsoft.azure.keyvault.models.custo
     }
 
     /**
-     * Get the cer value.
+     * Get cER contents of x509 certificate.
      *
      * @return the cer value
      */
@@ -128,7 +128,7 @@ public class CertificateBundle extends com.microsoft.azure.keyvault.models.custo
     }
 
     /**
-     * Set the cer value.
+     * Set cER contents of x509 certificate.
      *
      * @param cer the cer value to set
      * @return the CertificateBundle object itself.
@@ -139,7 +139,7 @@ public class CertificateBundle extends com.microsoft.azure.keyvault.models.custo
     }
 
     /**
-     * Get the contentType value.
+     * Get the content type of the secret.
      *
      * @return the contentType value
      */
@@ -148,7 +148,7 @@ public class CertificateBundle extends com.microsoft.azure.keyvault.models.custo
     }
 
     /**
-     * Set the contentType value.
+     * Set the content type of the secret.
      *
      * @param contentType the contentType value to set
      * @return the CertificateBundle object itself.
@@ -159,7 +159,7 @@ public class CertificateBundle extends com.microsoft.azure.keyvault.models.custo
     }
 
     /**
-     * Get the attributes value.
+     * Get the certificate attributes.
      *
      * @return the attributes value
      */
@@ -168,7 +168,7 @@ public class CertificateBundle extends com.microsoft.azure.keyvault.models.custo
     }
 
     /**
-     * Set the attributes value.
+     * Set the certificate attributes.
      *
      * @param attributes the attributes value to set
      * @return the CertificateBundle object itself.
@@ -179,7 +179,7 @@ public class CertificateBundle extends com.microsoft.azure.keyvault.models.custo
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */
@@ -188,7 +188,7 @@ public class CertificateBundle extends com.microsoft.azure.keyvault.models.custo
     }
 
     /**
-     * Set the tags value.
+     * Set application specific metadata in the form of key-value pairs.
      *
      * @param tags the tags value to set
      * @return the CertificateBundle object itself.

@@ -39,7 +39,7 @@ public class CertificateIssuerUpdateParameters {
     private IssuerAttributes attributes;
 
     /**
-     * Get the provider value.
+     * Get the issuer provider.
      *
      * @return the provider value
      */
@@ -48,7 +48,7 @@ public class CertificateIssuerUpdateParameters {
     }
 
     /**
-     * Set the provider value.
+     * Set the issuer provider.
      *
      * @param provider the provider value to set
      * @return the CertificateIssuerUpdateParameters object itself.
@@ -59,7 +59,7 @@ public class CertificateIssuerUpdateParameters {
     }
 
     /**
-     * Get the credentials value.
+     * Get the credentials to be used for the issuer.
      *
      * @return the credentials value
      */
@@ -68,7 +68,7 @@ public class CertificateIssuerUpdateParameters {
     }
 
     /**
-     * Set the credentials value.
+     * Set the credentials to be used for the issuer.
      *
      * @param credentials the credentials value to set
      * @return the CertificateIssuerUpdateParameters object itself.
@@ -79,7 +79,7 @@ public class CertificateIssuerUpdateParameters {
     }
 
     /**
-     * Get the organizationDetails value.
+     * Get details of the organization as provided to the issuer.
      *
      * @return the organizationDetails value
      */
@@ -88,7 +88,7 @@ public class CertificateIssuerUpdateParameters {
     }
 
     /**
-     * Set the organizationDetails value.
+     * Set details of the organization as provided to the issuer.
      *
      * @param organizationDetails the organizationDetails value to set
      * @return the CertificateIssuerUpdateParameters object itself.
@@ -99,7 +99,7 @@ public class CertificateIssuerUpdateParameters {
     }
 
     /**
-     * Get the attributes value.
+     * Get attributes of the issuer object.
      *
      * @return the attributes value
      */
@@ -108,7 +108,7 @@ public class CertificateIssuerUpdateParameters {
     }
 
     /**
-     * Set the attributes value.
+     * Set attributes of the issuer object.
      *
      * @param attributes the attributes value to set
      * @return the CertificateIssuerUpdateParameters object itself.

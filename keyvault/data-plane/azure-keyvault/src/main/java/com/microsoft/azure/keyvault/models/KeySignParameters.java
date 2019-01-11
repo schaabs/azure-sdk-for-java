@@ -32,7 +32,7 @@ public class KeySignParameters {
     private Base64Url value;
 
     /**
-     * Get the algorithm value.
+     * Get the signing/verification algorithm identifier. For more information on possible algorithm types, see JsonWebKeySignatureAlgorithm. Possible values include: 'PS256', 'PS384', 'PS512', 'RS256', 'RS384', 'RS512', 'RSNULL', 'ES256', 'ES384', 'ES512', 'ES256K'.
      *
      * @return the algorithm value
      */
@@ -41,7 +41,7 @@ public class KeySignParameters {
     }
 
     /**
-     * Set the algorithm value.
+     * Set the signing/verification algorithm identifier. For more information on possible algorithm types, see JsonWebKeySignatureAlgorithm. Possible values include: 'PS256', 'PS384', 'PS512', 'RS256', 'RS384', 'RS512', 'RSNULL', 'ES256', 'ES384', 'ES512', 'ES256K'.
      *
      * @param algorithm the algorithm value to set
      * @return the KeySignParameters object itself.

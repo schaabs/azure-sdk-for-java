@@ -35,7 +35,7 @@ public class CertificateMergeParameters {
     private Map<String, String> tags;
 
     /**
-     * Get the x509Certificates value.
+     * Get the certificate or the certificate chain to merge.
      *
      * @return the x509Certificates value
      */
@@ -44,7 +44,7 @@ public class CertificateMergeParameters {
     }
 
     /**
-     * Set the x509Certificates value.
+     * Set the certificate or the certificate chain to merge.
      *
      * @param x509Certificates the x509Certificates value to set
      * @return the CertificateMergeParameters object itself.
@@ -55,7 +55,7 @@ public class CertificateMergeParameters {
     }
 
     /**
-     * Get the certificateAttributes value.
+     * Get the attributes of the certificate (optional).
      *
      * @return the certificateAttributes value
      */
@@ -64,7 +64,7 @@ public class CertificateMergeParameters {
     }
 
     /**
-     * Set the certificateAttributes value.
+     * Set the attributes of the certificate (optional).
      *
      * @param certificateAttributes the certificateAttributes value to set
      * @return the CertificateMergeParameters object itself.
@@ -75,7 +75,7 @@ public class CertificateMergeParameters {
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */
@@ -84,7 +84,7 @@ public class CertificateMergeParameters {
     }
 
     /**
-     * Set the tags value.
+     * Set application specific metadata in the form of key-value pairs.
      *
      * @param tags the tags value to set
      * @return the CertificateMergeParameters object itself.

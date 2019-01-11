@@ -22,7 +22,7 @@ public class StorageRestoreParameters {
     private Base64Url storageBundleBackup;
 
     /**
-     * Get the storageBundleBackup value.
+     * Get the backup blob associated with a storage account.
      *
      * @return the storageBundleBackup value
      */
@@ -34,7 +34,7 @@ public class StorageRestoreParameters {
     }
 
     /**
-     * Set the storageBundleBackup value.
+     * Set the backup blob associated with a storage account.
      *
      * @param storageBundleBackup the storageBundleBackup value to set
      * @return the StorageRestoreParameters object itself.

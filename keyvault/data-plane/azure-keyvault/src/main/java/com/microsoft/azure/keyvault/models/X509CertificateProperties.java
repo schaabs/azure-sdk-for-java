@@ -40,13 +40,13 @@ public class X509CertificateProperties {
     private List<KeyUsageType> keyUsage;
 
     /**
-     * The duration that the ceritifcate is valid in months.
+     * The duration that the certificate is valid in months.
      */
     @JsonProperty(value = "validity_months")
     private Integer validityInMonths;
 
     /**
-     * Get the subject value.
+     * Get the subject name. Should be a valid X509 distinguished Name.
      *
      * @return the subject value
      */
@@ -55,7 +55,7 @@ public class X509CertificateProperties {
     }
 
     /**
-     * Set the subject value.
+     * Set the subject name. Should be a valid X509 distinguished Name.
      *
      * @param subject the subject value to set
      * @return the X509CertificateProperties object itself.
@@ -66,7 +66,7 @@ public class X509CertificateProperties {
     }
 
     /**
-     * Get the ekus value.
+     * Get the enhanced key usage.
      *
      * @return the ekus value
      */
@@ -75,7 +75,7 @@ public class X509CertificateProperties {
     }
 
     /**
-     * Set the ekus value.
+     * Set the enhanced key usage.
      *
      * @param ekus the ekus value to set
      * @return the X509CertificateProperties object itself.
@@ -86,7 +86,7 @@ public class X509CertificateProperties {
     }
 
     /**
-     * Get the subjectAlternativeNames value.
+     * Get the subject alternative names.
      *
      * @return the subjectAlternativeNames value
      */
@@ -95,7 +95,7 @@ public class X509CertificateProperties {
     }
 
     /**
-     * Set the subjectAlternativeNames value.
+     * Set the subject alternative names.
      *
      * @param subjectAlternativeNames the subjectAlternativeNames value to set
      * @return the X509CertificateProperties object itself.
@@ -106,7 +106,7 @@ public class X509CertificateProperties {
     }
 
     /**
-     * Get the keyUsage value.
+     * Get list of key usages.
      *
      * @return the keyUsage value
      */
@@ -115,7 +115,7 @@ public class X509CertificateProperties {
     }
 
     /**
-     * Set the keyUsage value.
+     * Set list of key usages.
      *
      * @param keyUsage the keyUsage value to set
      * @return the X509CertificateProperties object itself.
@@ -126,7 +126,7 @@ public class X509CertificateProperties {
     }
 
     /**
-     * Get the validityInMonths value.
+     * Get the duration that the certificate is valid in months.
      *
      * @return the validityInMonths value
      */
@@ -135,7 +135,7 @@ public class X509CertificateProperties {
     }
 
     /**
-     * Set the validityInMonths value.
+     * Set the duration that the certificate is valid in months.
      *
      * @param validityInMonths the validityInMonths value to set
      * @return the X509CertificateProperties object itself.

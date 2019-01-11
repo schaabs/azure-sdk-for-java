@@ -26,7 +26,7 @@ public class KeyAttributes extends Attributes {
     private DeletionRecoveryLevel recoveryLevel;
 
     /**
-     * Get the recoveryLevel value.
+     * Get reflects the deletion recovery level currently in effect for keys in the current vault. If it contains 'Purgeable' the key can be permanently deleted by a privileged user; otherwise, only the system can purge the key, at the end of the retention interval. Possible values include: 'Purgeable', 'Recoverable+Purgeable', 'Recoverable', 'Recoverable+ProtectedSubscription'.
      *
      * @return the recoveryLevel value
      */

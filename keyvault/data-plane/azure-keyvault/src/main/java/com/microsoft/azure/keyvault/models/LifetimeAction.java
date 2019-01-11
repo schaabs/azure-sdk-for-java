@@ -28,7 +28,7 @@ public class LifetimeAction {
     private Action action;
 
     /**
-     * Get the trigger value.
+     * Get the condition that will execute the action.
      *
      * @return the trigger value
      */
@@ -37,7 +37,7 @@ public class LifetimeAction {
     }
 
     /**
-     * Set the trigger value.
+     * Set the condition that will execute the action.
      *
      * @param trigger the trigger value to set
      * @return the LifetimeAction object itself.
@@ -48,7 +48,7 @@ public class LifetimeAction {
     }
 
     /**
-     * Get the action value.
+     * Get the action that will be executed.
      *
      * @return the action value
      */
@@ -57,7 +57,7 @@ public class LifetimeAction {
     }
 
     /**
-     * Set the action value.
+     * Set the action that will be executed.
      *
      * @param action the action value to set
      * @return the LifetimeAction object itself.

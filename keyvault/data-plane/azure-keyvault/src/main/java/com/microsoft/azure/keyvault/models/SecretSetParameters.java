@@ -40,7 +40,7 @@ public class SecretSetParameters {
     private SecretAttributes secretAttributes;
 
     /**
-     * Get the value value.
+     * Get the value of the secret.
      *
      * @return the value value
      */
@@ -49,7 +49,7 @@ public class SecretSetParameters {
     }
 
     /**
-     * Set the value value.
+     * Set the value of the secret.
      *
      * @param value the value value to set
      * @return the SecretSetParameters object itself.
@@ -60,7 +60,7 @@ public class SecretSetParameters {
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */
@@ -69,7 +69,7 @@ public class SecretSetParameters {
     }
 
     /**
-     * Set the tags value.
+     * Set application specific metadata in the form of key-value pairs.
      *
      * @param tags the tags value to set
      * @return the SecretSetParameters object itself.
@@ -80,7 +80,7 @@ public class SecretSetParameters {
     }
 
     /**
-     * Get the contentType value.
+     * Get type of the secret value such as a password.
      *
      * @return the contentType value
      */
@@ -89,7 +89,7 @@ public class SecretSetParameters {
     }
 
     /**
-     * Set the contentType value.
+     * Set type of the secret value such as a password.
      *
      * @param contentType the contentType value to set
      * @return the SecretSetParameters object itself.
@@ -100,7 +100,7 @@ public class SecretSetParameters {
     }
 
     /**
-     * Get the secretAttributes value.
+     * Get the secret management attributes.
      *
      * @return the secretAttributes value
      */
@@ -109,7 +109,7 @@ public class SecretSetParameters {
     }
 
     /**
-     * Set the secretAttributes value.
+     * Set the secret management attributes.
      *
      * @param secretAttributes the secretAttributes value to set
      * @return the SecretSetParameters object itself.

@@ -41,7 +41,7 @@ public class KeyItem {
     private Boolean managed;
 
     /**
-     * Get the kid value.
+     * Get key identifier.
      *
      * @return the kid value
      */
@@ -50,7 +50,7 @@ public class KeyItem {
     }
 
     /**
-     * Set the kid value.
+     * Set key identifier.
      *
      * @param kid the kid value to set
      * @return the KeyItem object itself.
@@ -61,7 +61,7 @@ public class KeyItem {
     }
 
     /**
-     * Get the attributes value.
+     * Get the key management attributes.
      *
      * @return the attributes value
      */
@@ -70,7 +70,7 @@ public class KeyItem {
     }
 
     /**
-     * Set the attributes value.
+     * Set the key management attributes.
      *
      * @param attributes the attributes value to set
      * @return the KeyItem object itself.
@@ -81,7 +81,7 @@ public class KeyItem {
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */
@@ -90,7 +90,7 @@ public class KeyItem {
     }
 
     /**
-     * Set the tags value.
+     * Set application specific metadata in the form of key-value pairs.
      *
      * @param tags the tags value to set
      * @return the KeyItem object itself.
@@ -101,7 +101,7 @@ public class KeyItem {
     }
 
     /**
-     * Get the managed value.
+     * Get true if the key's lifetime is managed by key vault. If this is a key backing a certificate, then managed will be true.
      *
      * @return the managed value
      */

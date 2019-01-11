@@ -52,7 +52,7 @@ public class StorageAccountCreateParameters {
     private Map<String, String> tags;
 
     /**
-     * Get the resourceId value.
+     * Get storage account resource id.
      *
      * @return the resourceId value
      */
@@ -61,7 +61,7 @@ public class StorageAccountCreateParameters {
     }
 
     /**
-     * Set the resourceId value.
+     * Set storage account resource id.
      *
      * @param resourceId the resourceId value to set
      * @return the StorageAccountCreateParameters object itself.
@@ -72,7 +72,7 @@ public class StorageAccountCreateParameters {
     }
 
     /**
-     * Get the activeKeyName value.
+     * Get current active storage account key name.
      *
      * @return the activeKeyName value
      */
@@ -81,7 +81,7 @@ public class StorageAccountCreateParameters {
     }
 
     /**
-     * Set the activeKeyName value.
+     * Set current active storage account key name.
      *
      * @param activeKeyName the activeKeyName value to set
      * @return the StorageAccountCreateParameters object itself.
@@ -92,7 +92,7 @@ public class StorageAccountCreateParameters {
     }
 
     /**
-     * Get the autoRegenerateKey value.
+     * Get whether keyvault should manage the storage account for the user.
      *
      * @return the autoRegenerateKey value
      */
@@ -101,7 +101,7 @@ public class StorageAccountCreateParameters {
     }
 
     /**
-     * Set the autoRegenerateKey value.
+     * Set whether keyvault should manage the storage account for the user.
      *
      * @param autoRegenerateKey the autoRegenerateKey value to set
      * @return the StorageAccountCreateParameters object itself.
@@ -112,7 +112,7 @@ public class StorageAccountCreateParameters {
     }
 
     /**
-     * Get the regenerationPeriod value.
+     * Get the key regeneration time duration specified in ISO-8601 format.
      *
      * @return the regenerationPeriod value
      */
@@ -121,7 +121,7 @@ public class StorageAccountCreateParameters {
     }
 
     /**
-     * Set the regenerationPeriod value.
+     * Set the key regeneration time duration specified in ISO-8601 format.
      *
      * @param regenerationPeriod the regenerationPeriod value to set
      * @return the StorageAccountCreateParameters object itself.
@@ -132,7 +132,7 @@ public class StorageAccountCreateParameters {
     }
 
     /**
-     * Get the storageAccountAttributes value.
+     * Get the attributes of the storage account.
      *
      * @return the storageAccountAttributes value
      */
@@ -141,7 +141,7 @@ public class StorageAccountCreateParameters {
     }
 
     /**
-     * Set the storageAccountAttributes value.
+     * Set the attributes of the storage account.
      *
      * @param storageAccountAttributes the storageAccountAttributes value to set
      * @return the StorageAccountCreateParameters object itself.
@@ -152,7 +152,7 @@ public class StorageAccountCreateParameters {
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */
@@ -161,7 +161,7 @@ public class StorageAccountCreateParameters {
     }
 
     /**
-     * Set the tags value.
+     * Set application specific metadata in the form of key-value pairs.
      *
      * @param tags the tags value to set
      * @return the StorageAccountCreateParameters object itself.

@@ -63,7 +63,7 @@ public class SasDefinitionBundle {
     private Map<String, String> tags;
 
     /**
-     * Get the id value.
+     * Get the SAS definition id.
      *
      * @return the id value
      */
@@ -72,7 +72,7 @@ public class SasDefinitionBundle {
     }
 
     /**
-     * Get the secretId value.
+     * Get storage account SAS definition secret id.
      *
      * @return the secretId value
      */
@@ -81,7 +81,7 @@ public class SasDefinitionBundle {
     }
 
     /**
-     * Get the templateUri value.
+     * Get the SAS definition token template signed with an arbitrary key.  Tokens created according to the SAS definition will have the same properties as the template.
      *
      * @return the templateUri value
      */
@@ -90,7 +90,7 @@ public class SasDefinitionBundle {
     }
 
     /**
-     * Get the sasType value.
+     * Get the type of SAS token the SAS definition will create. Possible values include: 'account', 'service'.
      *
      * @return the sasType value
      */
@@ -99,7 +99,7 @@ public class SasDefinitionBundle {
     }
 
     /**
-     * Get the validityPeriod value.
+     * Get the validity period of SAS tokens created according to the SAS definition.
      *
      * @return the validityPeriod value
      */
@@ -108,7 +108,7 @@ public class SasDefinitionBundle {
     }
 
     /**
-     * Get the attributes value.
+     * Get the SAS definition attributes.
      *
      * @return the attributes value
      */
@@ -117,7 +117,7 @@ public class SasDefinitionBundle {
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */

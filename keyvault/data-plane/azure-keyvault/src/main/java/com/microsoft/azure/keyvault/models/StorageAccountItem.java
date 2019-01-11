@@ -40,7 +40,7 @@ public class StorageAccountItem {
     private Map<String, String> tags;
 
     /**
-     * Get the id value.
+     * Get storage identifier.
      *
      * @return the id value
      */
@@ -49,7 +49,7 @@ public class StorageAccountItem {
     }
 
     /**
-     * Get the resourceId value.
+     * Get storage account resource Id.
      *
      * @return the resourceId value
      */
@@ -58,7 +58,7 @@ public class StorageAccountItem {
     }
 
     /**
-     * Get the attributes value.
+     * Get the storage account management attributes.
      *
      * @return the attributes value
      */
@@ -67,7 +67,7 @@ public class StorageAccountItem {
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */

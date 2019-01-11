@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.microsoft.azure.keyvault.models.Attributes;
-import com.microsoft.azure.keyvault.models.JsonWebKeyCurveName;
+import com.microsoft.azure.keyvault.webkey.JsonWebKeyCurveName;
 import com.microsoft.azure.keyvault.models.KeyAttributes;
 import com.microsoft.azure.keyvault.webkey.JsonWebKeyOperation;
 import com.microsoft.azure.keyvault.webkey.JsonWebKeyType;

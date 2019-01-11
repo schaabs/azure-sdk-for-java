@@ -40,7 +40,7 @@ public class SasDefinitionItem {
     private Map<String, String> tags;
 
     /**
-     * Get the id value.
+     * Get the storage SAS identifier.
      *
      * @return the id value
      */
@@ -49,7 +49,7 @@ public class SasDefinitionItem {
     }
 
     /**
-     * Get the secretId value.
+     * Get the storage account SAS definition secret id.
      *
      * @return the secretId value
      */
@@ -58,7 +58,7 @@ public class SasDefinitionItem {
     }
 
     /**
-     * Get the attributes value.
+     * Get the SAS definition management attributes.
      *
      * @return the attributes value
      */
@@ -67,7 +67,7 @@ public class SasDefinitionItem {
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */

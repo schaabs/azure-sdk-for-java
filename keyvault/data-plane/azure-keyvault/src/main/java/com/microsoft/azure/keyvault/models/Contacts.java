@@ -28,7 +28,7 @@ public class Contacts {
     private List<Contact> contactList;
 
     /**
-     * Get the id value.
+     * Get identifier for the contacts collection.
      *
      * @return the id value
      */
@@ -37,7 +37,7 @@ public class Contacts {
     }
 
     /**
-     * Get the contactList value.
+     * Get the contact list for the vault certificates.
      *
      * @return the contactList value
      */
@@ -46,7 +46,7 @@ public class Contacts {
     }
 
     /**
-     * Set the contactList value.
+     * Set the contact list for the vault certificates.
      *
      * @param contactList the contactList value to set
      * @return the Contacts object itself.

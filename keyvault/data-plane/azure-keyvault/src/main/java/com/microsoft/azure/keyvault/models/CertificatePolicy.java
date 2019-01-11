@@ -59,7 +59,7 @@ public class CertificatePolicy {
     private CertificateAttributes attributes;
 
     /**
-     * Get the id value.
+     * Get the certificate id.
      *
      * @return the id value
      */
@@ -68,7 +68,7 @@ public class CertificatePolicy {
     }
 
     /**
-     * Get the keyProperties value.
+     * Get properties of the key backing a certificate.
      *
      * @return the keyProperties value
      */
@@ -77,7 +77,7 @@ public class CertificatePolicy {
     }
 
     /**
-     * Set the keyProperties value.
+     * Set properties of the key backing a certificate.
      *
      * @param keyProperties the keyProperties value to set
      * @return the CertificatePolicy object itself.
@@ -88,7 +88,7 @@ public class CertificatePolicy {
     }
 
     /**
-     * Get the secretProperties value.
+     * Get properties of the secret backing a certificate.
      *
      * @return the secretProperties value
      */
@@ -97,7 +97,7 @@ public class CertificatePolicy {
     }
 
     /**
-     * Set the secretProperties value.
+     * Set properties of the secret backing a certificate.
      *
      * @param secretProperties the secretProperties value to set
      * @return the CertificatePolicy object itself.
@@ -108,7 +108,7 @@ public class CertificatePolicy {
     }
 
     /**
-     * Get the x509CertificateProperties value.
+     * Get properties of the X509 component of a certificate.
      *
      * @return the x509CertificateProperties value
      */
@@ -117,7 +117,7 @@ public class CertificatePolicy {
     }
 
     /**
-     * Set the x509CertificateProperties value.
+     * Set properties of the X509 component of a certificate.
      *
      * @param x509CertificateProperties the x509CertificateProperties value to set
      * @return the CertificatePolicy object itself.
@@ -128,7 +128,7 @@ public class CertificatePolicy {
     }
 
     /**
-     * Get the lifetimeActions value.
+     * Get actions that will be performed by Key Vault over the lifetime of a certificate.
      *
      * @return the lifetimeActions value
      */
@@ -137,7 +137,7 @@ public class CertificatePolicy {
     }
 
     /**
-     * Set the lifetimeActions value.
+     * Set actions that will be performed by Key Vault over the lifetime of a certificate.
      *
      * @param lifetimeActions the lifetimeActions value to set
      * @return the CertificatePolicy object itself.
@@ -148,7 +148,7 @@ public class CertificatePolicy {
     }
 
     /**
-     * Get the issuerParameters value.
+     * Get parameters for the issuer of the X509 component of a certificate.
      *
      * @return the issuerParameters value
      */
@@ -157,7 +157,7 @@ public class CertificatePolicy {
     }
 
     /**
-     * Set the issuerParameters value.
+     * Set parameters for the issuer of the X509 component of a certificate.
      *
      * @param issuerParameters the issuerParameters value to set
      * @return the CertificatePolicy object itself.
@@ -168,7 +168,7 @@ public class CertificatePolicy {
     }
 
     /**
-     * Get the attributes value.
+     * Get the certificate attributes.
      *
      * @return the attributes value
      */
@@ -177,7 +177,7 @@ public class CertificatePolicy {
     }
 
     /**
-     * Set the attributes value.
+     * Set the certificate attributes.
      *
      * @param attributes the attributes value to set
      * @return the CertificatePolicy object itself.

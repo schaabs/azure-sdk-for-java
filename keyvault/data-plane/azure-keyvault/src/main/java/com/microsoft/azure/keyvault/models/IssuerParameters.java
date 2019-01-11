@@ -8,6 +8,7 @@
 
 package com.microsoft.azure.keyvault.models;
 
+import java.util.List;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
@@ -35,7 +36,22 @@ public class IssuerParameters {
     private Boolean certificateTransparency;
 
     /**
-     * Get the name value.
+     * The method the issuer will use to validate certificate creation and
+     * renewal requests. Possible values include: 'email', 'dns-txt-token',
+     * 'http-token'.
+     */
+    @JsonProperty(value = "validation_method")
+    private ValidationMethod validationMethod;
+
+    /**
+     * A list of email addresses where validation emails should be sent for
+     * specific DNS names.
+     */
+    @JsonProperty(value = "validation_emails")
+    private List<ValidationEmail> validationEmails;
+
+    /**
+     * Get name of the referenced issuer object or reserved names; for example, 'Self' or 'Unknown'.
      *
      * @return the name value
      */
@@ -44,7 +60,7 @@ public class IssuerParameters {
     }
 
     /**
-     * Set the name value.
+     * Set name of the referenced issuer object or reserved names; for example, 'Self' or 'Unknown'.
      *
      * @param name the name value to set
      * @return the IssuerParameters object itself.
@@ -55,7 +71,7 @@ public class IssuerParameters {
     }
 
     /**
-     * Get the certificateType value.
+     * Get type of certificate to be requested from the issuer provider.
      *
      * @return the certificateType value
      */
@@ -64,7 +80,7 @@ public class IssuerParameters {
     }
 
     /**
-     * Set the certificateType value.
+     * Set type of certificate to be requested from the issuer provider.
      *
      * @param certificateType the certificateType value to set
      * @return the IssuerParameters object itself.
@@ -75,7 +91,7 @@ public class IssuerParameters {
     }
 
     /**
-     * Get the certificateTransparency value.
+     * Get indicates if the certificates generated under this policy should be published to certificate transparency logs.
      *
      * @return the certificateTransparency value
      */
@@ -84,13 +100,53 @@ public class IssuerParameters {
     }
 
     /**
-     * Set the certificateTransparency value.
+     * Set indicates if the certificates generated under this policy should be published to certificate transparency logs.
      *
      * @param certificateTransparency the certificateTransparency value to set
      * @return the IssuerParameters object itself.
      */
     public IssuerParameters withCertificateTransparency(Boolean certificateTransparency) {
         this.certificateTransparency = certificateTransparency;
+        return this;
+    }
+
+    /**
+     * Get the method the issuer will use to validate certificate creation and renewal requests. Possible values include: 'email', 'dns-txt-token', 'http-token'.
+     *
+     * @return the validationMethod value
+     */
+    public ValidationMethod validationMethod() {
+        return this.validationMethod;
+    }
+
+    /**
+     * Set the method the issuer will use to validate certificate creation and renewal requests. Possible values include: 'email', 'dns-txt-token', 'http-token'.
+     *
+     * @param validationMethod the validationMethod value to set
+     * @return the IssuerParameters object itself.
+     */
+    public IssuerParameters withValidationMethod(ValidationMethod validationMethod) {
+        this.validationMethod = validationMethod;
+        return this;
+    }
+
+    /**
+     * Get a list of email addresses where validation emails should be sent for specific DNS names.
+     *
+     * @return the validationEmails value
+     */
+    public List<ValidationEmail> validationEmails() {
+        return this.validationEmails;
+    }
+
+    /**
+     * Set a list of email addresses where validation emails should be sent for specific DNS names.
+     *
+     * @param validationEmails the validationEmails value to set
+     * @return the IssuerParameters object itself.
+     */
+    public IssuerParameters withValidationEmails(List<ValidationEmail> validationEmails) {
+        this.validationEmails = validationEmails;
         return this;
     }
 

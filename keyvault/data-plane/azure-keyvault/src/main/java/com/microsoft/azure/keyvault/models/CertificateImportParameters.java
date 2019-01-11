@@ -48,7 +48,7 @@ public class CertificateImportParameters {
     private Map<String, String> tags;
 
     /**
-     * Get the base64EncodedCertificate value.
+     * Get base64 encoded representation of the certificate object to import. This certificate needs to contain the private key.
      *
      * @return the base64EncodedCertificate value
      */
@@ -57,7 +57,7 @@ public class CertificateImportParameters {
     }
 
     /**
-     * Set the base64EncodedCertificate value.
+     * Set base64 encoded representation of the certificate object to import. This certificate needs to contain the private key.
      *
      * @param base64EncodedCertificate the base64EncodedCertificate value to set
      * @return the CertificateImportParameters object itself.
@@ -68,7 +68,7 @@ public class CertificateImportParameters {
     }
 
     /**
-     * Get the password value.
+     * Get if the private key in base64EncodedCertificate is encrypted, the password used for encryption.
      *
      * @return the password value
      */
@@ -77,7 +77,7 @@ public class CertificateImportParameters {
     }
 
     /**
-     * Set the password value.
+     * Set if the private key in base64EncodedCertificate is encrypted, the password used for encryption.
      *
      * @param password the password value to set
      * @return the CertificateImportParameters object itself.
@@ -88,7 +88,7 @@ public class CertificateImportParameters {
     }
 
     /**
-     * Get the certificatePolicy value.
+     * Get the management policy for the certificate.
      *
      * @return the certificatePolicy value
      */
@@ -97,7 +97,7 @@ public class CertificateImportParameters {
     }
 
     /**
-     * Set the certificatePolicy value.
+     * Set the management policy for the certificate.
      *
      * @param certificatePolicy the certificatePolicy value to set
      * @return the CertificateImportParameters object itself.
@@ -108,7 +108,7 @@ public class CertificateImportParameters {
     }
 
     /**
-     * Get the certificateAttributes value.
+     * Get the attributes of the certificate (optional).
      *
      * @return the certificateAttributes value
      */
@@ -117,7 +117,7 @@ public class CertificateImportParameters {
     }
 
     /**
-     * Set the certificateAttributes value.
+     * Set the attributes of the certificate (optional).
      *
      * @param certificateAttributes the certificateAttributes value to set
      * @return the CertificateImportParameters object itself.
@@ -128,7 +128,7 @@ public class CertificateImportParameters {
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */
@@ -137,7 +137,7 @@ public class CertificateImportParameters {
     }
 
     /**
-     * Set the tags value.
+     * Set application specific metadata in the form of key-value pairs.
      *
      * @param tags the tags value to set
      * @return the CertificateImportParameters object itself.

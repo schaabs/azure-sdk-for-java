@@ -22,7 +22,7 @@ public class BackupKeyResult {
     private Base64Url value;
 
     /**
-     * Get the value value.
+     * Get the backup blob containing the backed up key.
      *
      * @return the value value
      */

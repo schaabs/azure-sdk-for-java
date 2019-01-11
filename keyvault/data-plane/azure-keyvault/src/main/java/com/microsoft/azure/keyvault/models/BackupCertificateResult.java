@@ -22,7 +22,7 @@ public class BackupCertificateResult {
     private Base64Url value;
 
     /**
-     * Get the value value.
+     * Get the backup blob containing the backed up certificate.
      *
      * @return the value value
      */

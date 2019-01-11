@@ -41,7 +41,7 @@ public class KeyImportParameters {
     private Map<String, String> tags;
 
     /**
-     * Get the hsm value.
+     * Get whether to import as a hardware key (HSM) or software key.
      *
      * @return the hsm value
      */
@@ -50,7 +50,7 @@ public class KeyImportParameters {
     }
 
     /**
-     * Set the hsm value.
+     * Set whether to import as a hardware key (HSM) or software key.
      *
      * @param hsm the hsm value to set
      * @return the KeyImportParameters object itself.
@@ -61,7 +61,7 @@ public class KeyImportParameters {
     }
 
     /**
-     * Get the key value.
+     * Get the Json web key.
      *
      * @return the key value
      */
@@ -70,7 +70,7 @@ public class KeyImportParameters {
     }
 
     /**
-     * Set the key value.
+     * Set the Json web key.
      *
      * @param key the key value to set
      * @return the KeyImportParameters object itself.
@@ -81,7 +81,7 @@ public class KeyImportParameters {
     }
 
     /**
-     * Get the keyAttributes value.
+     * Get the key management attributes.
      *
      * @return the keyAttributes value
      */
@@ -90,7 +90,7 @@ public class KeyImportParameters {
     }
 
     /**
-     * Set the keyAttributes value.
+     * Set the key management attributes.
      *
      * @param keyAttributes the keyAttributes value to set
      * @return the KeyImportParameters object itself.
@@ -101,7 +101,7 @@ public class KeyImportParameters {
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */
@@ -110,7 +110,7 @@ public class KeyImportParameters {
     }
 
     /**
-     * Set the tags value.
+     * Set application specific metadata in the form of key-value pairs.
      *
      * @param tags the tags value to set
      * @return the KeyImportParameters object itself.

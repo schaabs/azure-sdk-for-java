@@ -46,7 +46,7 @@ public class StorageAccountUpdateParameters {
     private Map<String, String> tags;
 
     /**
-     * Get the activeKeyName value.
+     * Get the current active storage account key name.
      *
      * @return the activeKeyName value
      */
@@ -55,7 +55,7 @@ public class StorageAccountUpdateParameters {
     }
 
     /**
-     * Set the activeKeyName value.
+     * Set the current active storage account key name.
      *
      * @param activeKeyName the activeKeyName value to set
      * @return the StorageAccountUpdateParameters object itself.
@@ -66,7 +66,7 @@ public class StorageAccountUpdateParameters {
     }
 
     /**
-     * Get the autoRegenerateKey value.
+     * Get whether keyvault should manage the storage account for the user.
      *
      * @return the autoRegenerateKey value
      */
@@ -75,7 +75,7 @@ public class StorageAccountUpdateParameters {
     }
 
     /**
-     * Set the autoRegenerateKey value.
+     * Set whether keyvault should manage the storage account for the user.
      *
      * @param autoRegenerateKey the autoRegenerateKey value to set
      * @return the StorageAccountUpdateParameters object itself.
@@ -86,7 +86,7 @@ public class StorageAccountUpdateParameters {
     }
 
     /**
-     * Get the regenerationPeriod value.
+     * Get the key regeneration time duration specified in ISO-8601 format.
      *
      * @return the regenerationPeriod value
      */
@@ -95,7 +95,7 @@ public class StorageAccountUpdateParameters {
     }
 
     /**
-     * Set the regenerationPeriod value.
+     * Set the key regeneration time duration specified in ISO-8601 format.
      *
      * @param regenerationPeriod the regenerationPeriod value to set
      * @return the StorageAccountUpdateParameters object itself.
@@ -106,7 +106,7 @@ public class StorageAccountUpdateParameters {
     }
 
     /**
-     * Get the storageAccountAttributes value.
+     * Get the attributes of the storage account.
      *
      * @return the storageAccountAttributes value
      */
@@ -115,7 +115,7 @@ public class StorageAccountUpdateParameters {
     }
 
     /**
-     * Set the storageAccountAttributes value.
+     * Set the attributes of the storage account.
      *
      * @param storageAccountAttributes the storageAccountAttributes value to set
      * @return the StorageAccountUpdateParameters object itself.
@@ -126,7 +126,7 @@ public class StorageAccountUpdateParameters {
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */
@@ -135,7 +135,7 @@ public class StorageAccountUpdateParameters {
     }
 
     /**
-     * Set the tags value.
+     * Set application specific metadata in the form of key-value pairs.
      *
      * @param tags the tags value to set
      * @return the StorageAccountUpdateParameters object itself.

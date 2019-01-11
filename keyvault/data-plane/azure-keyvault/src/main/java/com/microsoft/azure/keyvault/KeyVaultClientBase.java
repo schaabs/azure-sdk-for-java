@@ -8,13 +8,7 @@
 
 package com.microsoft.azure.keyvault;
 
-import java.util.List;
-import java.util.Map;
-
 import com.microsoft.azure.AzureClient;
-import com.microsoft.azure.ListOperationCallback;
-import com.microsoft.azure.Page;
-import com.microsoft.azure.PagedList;
 import com.microsoft.azure.keyvault.models.BackupCertificateResult;
 import com.microsoft.azure.keyvault.models.BackupKeyResult;
 import com.microsoft.azure.keyvault.models.BackupSecretResult;
@@ -39,7 +33,12 @@ import com.microsoft.azure.keyvault.models.DeletedStorageBundle;
 import com.microsoft.azure.keyvault.models.IssuerAttributes;
 import com.microsoft.azure.keyvault.models.IssuerBundle;
 import com.microsoft.azure.keyvault.models.IssuerCredentials;
-import com.microsoft.azure.keyvault.models.JsonWebKeyCurveName;
+import com.microsoft.azure.keyvault.webkey.JsonWebKey;
+import com.microsoft.azure.keyvault.webkey.JsonWebKeyCurveName;
+import com.microsoft.azure.keyvault.webkey.JsonWebKeyEncryptionAlgorithm;
+import com.microsoft.azure.keyvault.webkey.JsonWebKeyOperation;
+import com.microsoft.azure.keyvault.webkey.JsonWebKeySignatureAlgorithm;
+import com.microsoft.azure.keyvault.webkey.JsonWebKeyType;
 import com.microsoft.azure.keyvault.models.KeyAttributes;
 import com.microsoft.azure.keyvault.models.KeyBundle;
 import com.microsoft.azure.keyvault.models.KeyItem;
@@ -57,16 +56,16 @@ import com.microsoft.azure.keyvault.models.SecretItem;
 import com.microsoft.azure.keyvault.models.StorageAccountAttributes;
 import com.microsoft.azure.keyvault.models.StorageAccountItem;
 import com.microsoft.azure.keyvault.models.StorageBundle;
-import com.microsoft.azure.keyvault.webkey.JsonWebKey;
-import com.microsoft.azure.keyvault.webkey.JsonWebKeyEncryptionAlgorithm;
-import com.microsoft.azure.keyvault.webkey.JsonWebKeyOperation;
-import com.microsoft.azure.keyvault.webkey.JsonWebKeySignatureAlgorithm;
-import com.microsoft.azure.keyvault.webkey.JsonWebKeyType;
+import com.microsoft.azure.ListOperationCallback;
+import com.microsoft.azure.Page;
+import com.microsoft.azure.PagedList;
 import com.microsoft.rest.RestClient;
 import com.microsoft.rest.ServiceCallback;
 import com.microsoft.rest.ServiceFuture;
 import com.microsoft.rest.ServiceResponse;
-
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 import rx.Observable;
 
 /**
@@ -101,14 +100,14 @@ public interface KeyVaultClientBase {
     String apiVersion();
 
     /**
-     * Gets Gets or sets the preferred language for the response..
+     * Gets The preferred language for the response..
      *
      * @return the acceptLanguage value.
      */
     String acceptLanguage();
 
     /**
-     * Sets Gets or sets the preferred language for the response..
+     * Sets The preferred language for the response..
      *
      * @param acceptLanguage the acceptLanguage value.
      * @return the service client itself
@@ -116,14 +115,14 @@ public interface KeyVaultClientBase {
     KeyVaultClientBase withAcceptLanguage(String acceptLanguage);
 
     /**
-     * Gets Gets or sets the retry timeout in seconds for Long Running Operations. Default value is 30..
+     * Gets The retry timeout in seconds for Long Running Operations. Default value is 30..
      *
      * @return the longRunningOperationRetryTimeout value.
      */
     int longRunningOperationRetryTimeout();
 
     /**
-     * Sets Gets or sets the retry timeout in seconds for Long Running Operations. Default value is 30..
+     * Sets The retry timeout in seconds for Long Running Operations. Default value is 30..
      *
      * @param longRunningOperationRetryTimeout the longRunningOperationRetryTimeout value.
      * @return the service client itself
@@ -131,14 +130,14 @@ public interface KeyVaultClientBase {
     KeyVaultClientBase withLongRunningOperationRetryTimeout(int longRunningOperationRetryTimeout);
 
     /**
-     * Gets When set to true a unique x-ms-client-request-id value is generated and included in each request. Default is true..
+     * Gets Whether a unique x-ms-client-request-id should be generated. When set to true a unique x-ms-client-request-id value is generated and included in each request. Default is true..
      *
      * @return the generateClientRequestId value.
      */
     boolean generateClientRequestId();
 
     /**
-     * Sets When set to true a unique x-ms-client-request-id value is generated and included in each request. Default is true..
+     * Sets Whether a unique x-ms-client-request-id should be generated. When set to true a unique x-ms-client-request-id value is generated and included in each request. Default is true..
      *
      * @param generateClientRequestId the generateClientRequestId value.
      * @return the service client itself
@@ -872,7 +871,7 @@ public interface KeyVaultClientBase {
 
     /**
      * Encrypts an arbitrary sequence of bytes using an encryption key that is stored in a key vault.
-     * The ENCRYPT operation encrypts an arbitrary sequence of bytes using an encryption key that is stored in Azure Key Vault. Note that the ENCRYPT operation only supports a single block of data, the size of which is dependent on the target key and the encryption algorithm to be used. The ENCRYPT operation is only strictly necessary for symmetric keys stored in Azure Key Vault since protection with an asymmetric key can be performed using public portion of the key. This operation is supported for asymmetric keys as a convenience for callers that have a key-reference but do not have access to the public key material. This operation requires the keys/encypt permission.
+     * The ENCRYPT operation encrypts an arbitrary sequence of bytes using an encryption key that is stored in Azure Key Vault. Note that the ENCRYPT operation only supports a single block of data, the size of which is dependent on the target key and the encryption algorithm to be used. The ENCRYPT operation is only strictly necessary for symmetric keys stored in Azure Key Vault since protection with an asymmetric key can be performed using public portion of the key. This operation is supported for asymmetric keys as a convenience for callers that have a key-reference but do not have access to the public key material. This operation requires the keys/encrypt permission.
      *
      * @param vaultBaseUrl The vault name, for example https://myvault.vault.azure.net.
      * @param keyName The name of the key.
@@ -888,7 +887,7 @@ public interface KeyVaultClientBase {
 
     /**
      * Encrypts an arbitrary sequence of bytes using an encryption key that is stored in a key vault.
-     * The ENCRYPT operation encrypts an arbitrary sequence of bytes using an encryption key that is stored in Azure Key Vault. Note that the ENCRYPT operation only supports a single block of data, the size of which is dependent on the target key and the encryption algorithm to be used. The ENCRYPT operation is only strictly necessary for symmetric keys stored in Azure Key Vault since protection with an asymmetric key can be performed using public portion of the key. This operation is supported for asymmetric keys as a convenience for callers that have a key-reference but do not have access to the public key material. This operation requires the keys/encypt permission.
+     * The ENCRYPT operation encrypts an arbitrary sequence of bytes using an encryption key that is stored in Azure Key Vault. Note that the ENCRYPT operation only supports a single block of data, the size of which is dependent on the target key and the encryption algorithm to be used. The ENCRYPT operation is only strictly necessary for symmetric keys stored in Azure Key Vault since protection with an asymmetric key can be performed using public portion of the key. This operation is supported for asymmetric keys as a convenience for callers that have a key-reference but do not have access to the public key material. This operation requires the keys/encrypt permission.
      *
      * @param vaultBaseUrl The vault name, for example https://myvault.vault.azure.net.
      * @param keyName The name of the key.
@@ -903,7 +902,7 @@ public interface KeyVaultClientBase {
 
     /**
      * Encrypts an arbitrary sequence of bytes using an encryption key that is stored in a key vault.
-     * The ENCRYPT operation encrypts an arbitrary sequence of bytes using an encryption key that is stored in Azure Key Vault. Note that the ENCRYPT operation only supports a single block of data, the size of which is dependent on the target key and the encryption algorithm to be used. The ENCRYPT operation is only strictly necessary for symmetric keys stored in Azure Key Vault since protection with an asymmetric key can be performed using public portion of the key. This operation is supported for asymmetric keys as a convenience for callers that have a key-reference but do not have access to the public key material. This operation requires the keys/encypt permission.
+     * The ENCRYPT operation encrypts an arbitrary sequence of bytes using an encryption key that is stored in Azure Key Vault. Note that the ENCRYPT operation only supports a single block of data, the size of which is dependent on the target key and the encryption algorithm to be used. The ENCRYPT operation is only strictly necessary for symmetric keys stored in Azure Key Vault since protection with an asymmetric key can be performed using public portion of the key. This operation is supported for asymmetric keys as a convenience for callers that have a key-reference but do not have access to the public key material. This operation requires the keys/encrypt permission.
      *
      * @param vaultBaseUrl The vault name, for example https://myvault.vault.azure.net.
      * @param keyName The name of the key.
@@ -917,7 +916,7 @@ public interface KeyVaultClientBase {
 
     /**
      * Encrypts an arbitrary sequence of bytes using an encryption key that is stored in a key vault.
-     * The ENCRYPT operation encrypts an arbitrary sequence of bytes using an encryption key that is stored in Azure Key Vault. Note that the ENCRYPT operation only supports a single block of data, the size of which is dependent on the target key and the encryption algorithm to be used. The ENCRYPT operation is only strictly necessary for symmetric keys stored in Azure Key Vault since protection with an asymmetric key can be performed using public portion of the key. This operation is supported for asymmetric keys as a convenience for callers that have a key-reference but do not have access to the public key material. This operation requires the keys/encypt permission.
+     * The ENCRYPT operation encrypts an arbitrary sequence of bytes using an encryption key that is stored in Azure Key Vault. Note that the ENCRYPT operation only supports a single block of data, the size of which is dependent on the target key and the encryption algorithm to be used. The ENCRYPT operation is only strictly necessary for symmetric keys stored in Azure Key Vault since protection with an asymmetric key can be performed using public portion of the key. This operation is supported for asymmetric keys as a convenience for callers that have a key-reference but do not have access to the public key material. This operation requires the keys/encrypt permission.
      *
      * @param vaultBaseUrl The vault name, for example https://myvault.vault.azure.net.
      * @param keyName The name of the key.

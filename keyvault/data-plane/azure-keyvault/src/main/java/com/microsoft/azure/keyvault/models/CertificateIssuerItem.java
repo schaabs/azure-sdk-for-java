@@ -27,7 +27,7 @@ public class CertificateIssuerItem {
     private String provider;
 
     /**
-     * Get the id value.
+     * Get certificate Identifier.
      *
      * @return the id value
      */
@@ -36,7 +36,7 @@ public class CertificateIssuerItem {
     }
 
     /**
-     * Set the id value.
+     * Set certificate Identifier.
      *
      * @param id the id value to set
      * @return the CertificateIssuerItem object itself.
@@ -47,7 +47,7 @@ public class CertificateIssuerItem {
     }
 
     /**
-     * Get the provider value.
+     * Get the issuer provider.
      *
      * @return the provider value
      */
@@ -56,7 +56,7 @@ public class CertificateIssuerItem {
     }
 
     /**
-     * Set the provider value.
+     * Set the issuer provider.
      *
      * @param provider the provider value to set
      * @return the CertificateIssuerItem object itself.

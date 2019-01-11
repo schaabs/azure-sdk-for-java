@@ -34,7 +34,7 @@ public class SecretUpdateParameters {
     private Map<String, String> tags;
 
     /**
-     * Get the contentType value.
+     * Get type of the secret value such as a password.
      *
      * @return the contentType value
      */
@@ -43,7 +43,7 @@ public class SecretUpdateParameters {
     }
 
     /**
-     * Set the contentType value.
+     * Set type of the secret value such as a password.
      *
      * @param contentType the contentType value to set
      * @return the SecretUpdateParameters object itself.
@@ -54,7 +54,7 @@ public class SecretUpdateParameters {
     }
 
     /**
-     * Get the secretAttributes value.
+     * Get the secret management attributes.
      *
      * @return the secretAttributes value
      */
@@ -63,7 +63,7 @@ public class SecretUpdateParameters {
     }
 
     /**
-     * Set the secretAttributes value.
+     * Set the secret management attributes.
      *
      * @param secretAttributes the secretAttributes value to set
      * @return the SecretUpdateParameters object itself.
@@ -74,7 +74,7 @@ public class SecretUpdateParameters {
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */
@@ -83,7 +83,7 @@ public class SecretUpdateParameters {
     }
 
     /**
-     * Set the tags value.
+     * Set application specific metadata in the form of key-value pairs.
      *
      * @param tags the tags value to set
      * @return the SecretUpdateParameters object itself.

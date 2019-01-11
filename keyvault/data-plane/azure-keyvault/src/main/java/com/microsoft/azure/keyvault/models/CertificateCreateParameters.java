@@ -34,7 +34,7 @@ public class CertificateCreateParameters {
     private Map<String, String> tags;
 
     /**
-     * Get the certificatePolicy value.
+     * Get the management policy for the certificate.
      *
      * @return the certificatePolicy value
      */
@@ -43,7 +43,7 @@ public class CertificateCreateParameters {
     }
 
     /**
-     * Set the certificatePolicy value.
+     * Set the management policy for the certificate.
      *
      * @param certificatePolicy the certificatePolicy value to set
      * @return the CertificateCreateParameters object itself.
@@ -54,7 +54,7 @@ public class CertificateCreateParameters {
     }
 
     /**
-     * Get the certificateAttributes value.
+     * Get the attributes of the certificate (optional).
      *
      * @return the certificateAttributes value
      */
@@ -63,7 +63,7 @@ public class CertificateCreateParameters {
     }
 
     /**
-     * Set the certificateAttributes value.
+     * Set the attributes of the certificate (optional).
      *
      * @param certificateAttributes the certificateAttributes value to set
      * @return the CertificateCreateParameters object itself.
@@ -74,7 +74,7 @@ public class CertificateCreateParameters {
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */
@@ -83,7 +83,7 @@ public class CertificateCreateParameters {
     }
 
     /**
-     * Set the tags value.
+     * Set application specific metadata in the form of key-value pairs.
      *
      * @param tags the tags value to set
      * @return the CertificateCreateParameters object itself.

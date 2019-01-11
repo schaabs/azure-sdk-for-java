@@ -34,7 +34,7 @@ import com.microsoft.azure.keyvault.models.CertificateUpdateParameters;
 import com.microsoft.azure.keyvault.models.Contacts;
 import com.microsoft.azure.keyvault.models.DeletedCertificateItem;
 import com.microsoft.azure.keyvault.models.IssuerBundle;
-import com.microsoft.azure.keyvault.models.JsonWebKeyCurveName;
+import com.microsoft.azure.keyvault.webkey.JsonWebKeyCurveName;
 import com.microsoft.azure.keyvault.models.KeyAttributes;
 import com.microsoft.azure.keyvault.models.KeyBundle;
 import com.microsoft.azure.keyvault.models.KeyCreateParameters;

@@ -59,7 +59,7 @@ public class StorageBundle {
     private Map<String, String> tags;
 
     /**
-     * Get the id value.
+     * Get the storage account id.
      *
      * @return the id value
      */
@@ -68,7 +68,7 @@ public class StorageBundle {
     }
 
     /**
-     * Get the resourceId value.
+     * Get the storage account resource id.
      *
      * @return the resourceId value
      */
@@ -77,7 +77,7 @@ public class StorageBundle {
     }
 
     /**
-     * Get the activeKeyName value.
+     * Get the current active storage account key name.
      *
      * @return the activeKeyName value
      */
@@ -86,7 +86,7 @@ public class StorageBundle {
     }
 
     /**
-     * Get the autoRegenerateKey value.
+     * Get whether keyvault should manage the storage account for the user.
      *
      * @return the autoRegenerateKey value
      */
@@ -95,7 +95,7 @@ public class StorageBundle {
     }
 
     /**
-     * Get the regenerationPeriod value.
+     * Get the key regeneration time duration specified in ISO-8601 format.
      *
      * @return the regenerationPeriod value
      */
@@ -104,7 +104,7 @@ public class StorageBundle {
     }
 
     /**
-     * Get the attributes value.
+     * Get the storage account attributes.
      *
      * @return the attributes value
      */
@@ -113,7 +113,7 @@ public class StorageBundle {
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */

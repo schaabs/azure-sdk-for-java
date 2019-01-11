@@ -21,7 +21,7 @@ public class StorageAccountRegenerteKeyParameters {
     private String keyName;
 
     /**
-     * Get the keyName value.
+     * Get the storage account key name.
      *
      * @return the keyName value
      */
@@ -30,7 +30,7 @@ public class StorageAccountRegenerteKeyParameters {
     }
 
     /**
-     * Set the keyName value.
+     * Set the storage account key name.
      *
      * @param keyName the keyName value to set
      * @return the StorageAccountRegenerteKeyParameters object itself.

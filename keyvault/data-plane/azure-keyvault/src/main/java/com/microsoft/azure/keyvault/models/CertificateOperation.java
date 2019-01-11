@@ -70,7 +70,7 @@ public class CertificateOperation extends com.microsoft.azure.keyvault.models.cu
     private String requestId;
 
     /**
-     * Get the id value.
+     * Get the certificate id.
      *
      * @return the id value
      */
@@ -79,7 +79,7 @@ public class CertificateOperation extends com.microsoft.azure.keyvault.models.cu
     }
 
     /**
-     * Get the issuerParameters value.
+     * Get parameters for the issuer of the X509 component of a certificate.
      *
      * @return the issuerParameters value
      */
@@ -88,7 +88,7 @@ public class CertificateOperation extends com.microsoft.azure.keyvault.models.cu
     }
 
     /**
-     * Set the issuerParameters value.
+     * Set parameters for the issuer of the X509 component of a certificate.
      *
      * @param issuerParameters the issuerParameters value to set
      * @return the CertificateOperation object itself.
@@ -99,7 +99,7 @@ public class CertificateOperation extends com.microsoft.azure.keyvault.models.cu
     }
 
     /**
-     * Get the csr value.
+     * Get the certificate signing request (CSR) that is being used in the certificate operation.
      *
      * @return the csr value
      */
@@ -108,7 +108,7 @@ public class CertificateOperation extends com.microsoft.azure.keyvault.models.cu
     }
 
     /**
-     * Set the csr value.
+     * Set the certificate signing request (CSR) that is being used in the certificate operation.
      *
      * @param csr the csr value to set
      * @return the CertificateOperation object itself.
@@ -119,7 +119,7 @@ public class CertificateOperation extends com.microsoft.azure.keyvault.models.cu
     }
 
     /**
-     * Get the cancellationRequested value.
+     * Get indicates if cancellation was requested on the certificate operation.
      *
      * @return the cancellationRequested value
      */
@@ -128,7 +128,7 @@ public class CertificateOperation extends com.microsoft.azure.keyvault.models.cu
     }
 
     /**
-     * Set the cancellationRequested value.
+     * Set indicates if cancellation was requested on the certificate operation.
      *
      * @param cancellationRequested the cancellationRequested value to set
      * @return the CertificateOperation object itself.
@@ -139,7 +139,7 @@ public class CertificateOperation extends com.microsoft.azure.keyvault.models.cu
     }
 
     /**
-     * Get the status value.
+     * Get status of the certificate operation.
      *
      * @return the status value
      */
@@ -148,7 +148,7 @@ public class CertificateOperation extends com.microsoft.azure.keyvault.models.cu
     }
 
     /**
-     * Set the status value.
+     * Set status of the certificate operation.
      *
      * @param status the status value to set
      * @return the CertificateOperation object itself.
@@ -159,7 +159,7 @@ public class CertificateOperation extends com.microsoft.azure.keyvault.models.cu
     }
 
     /**
-     * Get the statusDetails value.
+     * Get the status details of the certificate operation.
      *
      * @return the statusDetails value
      */
@@ -168,7 +168,7 @@ public class CertificateOperation extends com.microsoft.azure.keyvault.models.cu
     }
 
     /**
-     * Set the statusDetails value.
+     * Set the status details of the certificate operation.
      *
      * @param statusDetails the statusDetails value to set
      * @return the CertificateOperation object itself.
@@ -179,7 +179,7 @@ public class CertificateOperation extends com.microsoft.azure.keyvault.models.cu
     }
 
     /**
-     * Get the error value.
+     * Get error encountered, if any, during the certificate operation.
      *
      * @return the error value
      */
@@ -188,7 +188,7 @@ public class CertificateOperation extends com.microsoft.azure.keyvault.models.cu
     }
 
     /**
-     * Set the error value.
+     * Set error encountered, if any, during the certificate operation.
      *
      * @param error the error value to set
      * @return the CertificateOperation object itself.
@@ -199,7 +199,7 @@ public class CertificateOperation extends com.microsoft.azure.keyvault.models.cu
     }
 
     /**
-     * Get the target value.
+     * Get location which contains the result of the certificate operation.
      *
      * @return the target value
      */
@@ -208,7 +208,7 @@ public class CertificateOperation extends com.microsoft.azure.keyvault.models.cu
     }
 
     /**
-     * Set the target value.
+     * Set location which contains the result of the certificate operation.
      *
      * @param target the target value to set
      * @return the CertificateOperation object itself.
@@ -219,7 +219,7 @@ public class CertificateOperation extends com.microsoft.azure.keyvault.models.cu
     }
 
     /**
-     * Get the requestId value.
+     * Get identifier for the certificate operation.
      *
      * @return the requestId value
      */
@@ -228,7 +228,7 @@ public class CertificateOperation extends com.microsoft.azure.keyvault.models.cu
     }
 
     /**
-     * Set the requestId value.
+     * Set identifier for the certificate operation.
      *
      * @param requestId the requestId value to set
      * @return the CertificateOperation object itself.

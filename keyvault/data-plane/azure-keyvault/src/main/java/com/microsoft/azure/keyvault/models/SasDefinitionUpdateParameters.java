@@ -50,7 +50,7 @@ public class SasDefinitionUpdateParameters {
     private Map<String, String> tags;
 
     /**
-     * Get the templateUri value.
+     * Get the SAS definition token template signed with an arbitrary key.  Tokens created according to the SAS definition will have the same properties as the template.
      *
      * @return the templateUri value
      */
@@ -59,7 +59,7 @@ public class SasDefinitionUpdateParameters {
     }
 
     /**
-     * Set the templateUri value.
+     * Set the SAS definition token template signed with an arbitrary key.  Tokens created according to the SAS definition will have the same properties as the template.
      *
      * @param templateUri the templateUri value to set
      * @return the SasDefinitionUpdateParameters object itself.
@@ -70,7 +70,7 @@ public class SasDefinitionUpdateParameters {
     }
 
     /**
-     * Get the sasType value.
+     * Get the type of SAS token the SAS definition will create. Possible values include: 'account', 'service'.
      *
      * @return the sasType value
      */
@@ -79,7 +79,7 @@ public class SasDefinitionUpdateParameters {
     }
 
     /**
-     * Set the sasType value.
+     * Set the type of SAS token the SAS definition will create. Possible values include: 'account', 'service'.
      *
      * @param sasType the sasType value to set
      * @return the SasDefinitionUpdateParameters object itself.
@@ -90,7 +90,7 @@ public class SasDefinitionUpdateParameters {
     }
 
     /**
-     * Get the validityPeriod value.
+     * Get the validity period of SAS tokens created according to the SAS definition.
      *
      * @return the validityPeriod value
      */
@@ -99,7 +99,7 @@ public class SasDefinitionUpdateParameters {
     }
 
     /**
-     * Set the validityPeriod value.
+     * Set the validity period of SAS tokens created according to the SAS definition.
      *
      * @param validityPeriod the validityPeriod value to set
      * @return the SasDefinitionUpdateParameters object itself.
@@ -110,7 +110,7 @@ public class SasDefinitionUpdateParameters {
     }
 
     /**
-     * Get the sasDefinitionAttributes value.
+     * Get the attributes of the SAS definition.
      *
      * @return the sasDefinitionAttributes value
      */
@@ -119,7 +119,7 @@ public class SasDefinitionUpdateParameters {
     }
 
     /**
-     * Set the sasDefinitionAttributes value.
+     * Set the attributes of the SAS definition.
      *
      * @param sasDefinitionAttributes the sasDefinitionAttributes value to set
      * @return the SasDefinitionUpdateParameters object itself.
@@ -130,7 +130,7 @@ public class SasDefinitionUpdateParameters {
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */
@@ -139,7 +139,7 @@ public class SasDefinitionUpdateParameters {
     }
 
     /**
-     * Set the tags value.
+     * Set application specific metadata in the form of key-value pairs.
      *
      * @param tags the tags value to set
      * @return the SasDefinitionUpdateParameters object itself.

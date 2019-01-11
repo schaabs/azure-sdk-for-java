@@ -15,7 +15,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  */
 public class Contact {
     /**
-     * Email addresss.
+     * Email address.
      */
     @JsonProperty(value = "email")
     private String emailAddress;
@@ -33,7 +33,7 @@ public class Contact {
     private String phone;
 
     /**
-     * Get the emailAddress value.
+     * Get email address.
      *
      * @return the emailAddress value
      */
@@ -42,7 +42,7 @@ public class Contact {
     }
 
     /**
-     * Set the emailAddress value.
+     * Set email address.
      *
      * @param emailAddress the emailAddress value to set
      * @return the Contact object itself.
@@ -53,7 +53,7 @@ public class Contact {
     }
 
     /**
-     * Get the name value.
+     * Get name.
      *
      * @return the name value
      */
@@ -62,7 +62,7 @@ public class Contact {
     }
 
     /**
-     * Set the name value.
+     * Set name.
      *
      * @param name the name value to set
      * @return the Contact object itself.
@@ -73,7 +73,7 @@ public class Contact {
     }
 
     /**
-     * Get the phone value.
+     * Get phone number.
      *
      * @return the phone value
      */
@@ -82,7 +82,7 @@ public class Contact {
     }
 
     /**
-     * Set the phone value.
+     * Set phone number.
      *
      * @param phone the phone value to set
      * @return the Contact object itself.

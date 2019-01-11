@@ -35,7 +35,7 @@ public class IssuerAttributes {
     private Long updated;
 
     /**
-     * Get the enabled value.
+     * Get determines whether the issuer is enabled.
      *
      * @return the enabled value
      */
@@ -44,7 +44,7 @@ public class IssuerAttributes {
     }
 
     /**
-     * Set the enabled value.
+     * Set determines whether the issuer is enabled.
      *
      * @param enabled the enabled value to set
      * @return the IssuerAttributes object itself.
@@ -55,7 +55,7 @@ public class IssuerAttributes {
     }
 
     /**
-     * Get the created value.
+     * Get creation time in UTC.
      *
      * @return the created value
      */
@@ -67,7 +67,7 @@ public class IssuerAttributes {
     }
 
     /**
-     * Get the updated value.
+     * Get last updated time in UTC.
      *
      * @return the updated value
      */

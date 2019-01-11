@@ -8,8 +8,9 @@
 
 package com.microsoft.azure.keyvault.models;
 
-import com.microsoft.azure.keyvault.webkey.JsonWebKeyOperation;
 import com.microsoft.azure.keyvault.webkey.JsonWebKeyType;
+import com.microsoft.azure.keyvault.webkey.JsonWebKeyOperation;
+import com.microsoft.azure.keyvault.webkey.JsonWebKeyCurveName;
 import java.util.List;
 import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -57,7 +58,7 @@ public class KeyCreateParameters {
     private JsonWebKeyCurveName curve;
 
     /**
-     * Get the kty value.
+     * Get the type of key to create. For valid values, see JsonWebKeyType. Possible values include: 'EC', 'EC-HSM', 'RSA', 'RSA-HSM', 'oct'.
      *
      * @return the kty value
      */
@@ -66,7 +67,7 @@ public class KeyCreateParameters {
     }
 
     /**
-     * Set the kty value.
+     * Set the type of key to create. For valid values, see JsonWebKeyType. Possible values include: 'EC', 'EC-HSM', 'RSA', 'RSA-HSM', 'oct'.
      *
      * @param kty the kty value to set
      * @return the KeyCreateParameters object itself.
@@ -77,7 +78,7 @@ public class KeyCreateParameters {
     }
 
     /**
-     * Get the keySize value.
+     * Get the key size in bits. For example: 2048, 3072, or 4096 for RSA.
      *
      * @return the keySize value
      */
@@ -86,7 +87,7 @@ public class KeyCreateParameters {
     }
 
     /**
-     * Set the keySize value.
+     * Set the key size in bits. For example: 2048, 3072, or 4096 for RSA.
      *
      * @param keySize the keySize value to set
      * @return the KeyCreateParameters object itself.
@@ -137,7 +138,7 @@ public class KeyCreateParameters {
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */
@@ -146,7 +147,7 @@ public class KeyCreateParameters {
     }
 
     /**
-     * Set the tags value.
+     * Set application specific metadata in the form of key-value pairs.
      *
      * @param tags the tags value to set
      * @return the KeyCreateParameters object itself.
@@ -157,7 +158,7 @@ public class KeyCreateParameters {
     }
 
     /**
-     * Get the curve value.
+     * Get elliptic curve name. For valid values, see JsonWebKeyCurveName. Possible values include: 'P-256', 'P-384', 'P-521', 'P-256K'.
      *
      * @return the curve value
      */
@@ -166,7 +167,7 @@ public class KeyCreateParameters {
     }
 
     /**
-     * Set the curve value.
+     * Set elliptic curve name. For valid values, see JsonWebKeyCurveName. Possible values include: 'P-256', 'P-384', 'P-521', 'P-256K'.
      *
      * @param curve the curve value to set
      * @return the KeyCreateParameters object itself.

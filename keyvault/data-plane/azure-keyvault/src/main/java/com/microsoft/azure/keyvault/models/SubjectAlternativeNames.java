@@ -34,7 +34,7 @@ public class SubjectAlternativeNames {
     private List<String> upns;
 
     /**
-     * Get the emails value.
+     * Get email addresses.
      *
      * @return the emails value
      */
@@ -43,7 +43,7 @@ public class SubjectAlternativeNames {
     }
 
     /**
-     * Set the emails value.
+     * Set email addresses.
      *
      * @param emails the emails value to set
      * @return the SubjectAlternativeNames object itself.
@@ -54,7 +54,7 @@ public class SubjectAlternativeNames {
     }
 
     /**
-     * Get the dnsNames value.
+     * Get domain names.
      *
      * @return the dnsNames value
      */
@@ -63,7 +63,7 @@ public class SubjectAlternativeNames {
     }
 
     /**
-     * Set the dnsNames value.
+     * Set domain names.
      *
      * @param dnsNames the dnsNames value to set
      * @return the SubjectAlternativeNames object itself.
@@ -74,7 +74,7 @@ public class SubjectAlternativeNames {
     }
 
     /**
-     * Get the upns value.
+     * Get user principal names.
      *
      * @return the upns value
      */
@@ -83,7 +83,7 @@ public class SubjectAlternativeNames {
     }
 
     /**
-     * Set the upns value.
+     * Set user principal names.
      *
      * @param upns the upns value to set
      * @return the SubjectAlternativeNames object itself.

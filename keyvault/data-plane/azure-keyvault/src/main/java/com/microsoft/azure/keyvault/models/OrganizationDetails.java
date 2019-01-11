@@ -28,7 +28,7 @@ public class OrganizationDetails {
     private List<AdministratorDetails> adminDetails;
 
     /**
-     * Get the id value.
+     * Get id of the organization.
      *
      * @return the id value
      */
@@ -37,7 +37,7 @@ public class OrganizationDetails {
     }
 
     /**
-     * Set the id value.
+     * Set id of the organization.
      *
      * @param id the id value to set
      * @return the OrganizationDetails object itself.
@@ -48,7 +48,7 @@ public class OrganizationDetails {
     }
 
     /**
-     * Get the adminDetails value.
+     * Get details of the organization administrator.
      *
      * @return the adminDetails value
      */
@@ -57,7 +57,7 @@ public class OrganizationDetails {
     }
 
     /**
-     * Set the adminDetails value.
+     * Set details of the organization administrator.
      *
      * @param adminDetails the adminDetails value to set
      * @return the OrganizationDetails object itself.

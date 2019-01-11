@@ -60,7 +60,7 @@ public class SecretBundle extends com.microsoft.azure.keyvault.models.custom.Sec
     private Boolean managed;
 
     /**
-     * Get the value value.
+     * Get the secret value.
      *
      * @return the value value
      */
@@ -69,7 +69,7 @@ public class SecretBundle extends com.microsoft.azure.keyvault.models.custom.Sec
     }
 
     /**
-     * Set the value value.
+     * Set the secret value.
      *
      * @param value the value value to set
      * @return the SecretBundle object itself.
@@ -80,7 +80,7 @@ public class SecretBundle extends com.microsoft.azure.keyvault.models.custom.Sec
     }
 
     /**
-     * Get the id value.
+     * Get the secret id.
      *
      * @return the id value
      */
@@ -89,7 +89,7 @@ public class SecretBundle extends com.microsoft.azure.keyvault.models.custom.Sec
     }
 
     /**
-     * Set the id value.
+     * Set the secret id.
      *
      * @param id the id value to set
      * @return the SecretBundle object itself.
@@ -100,7 +100,7 @@ public class SecretBundle extends com.microsoft.azure.keyvault.models.custom.Sec
     }
 
     /**
-     * Get the contentType value.
+     * Get the content type of the secret.
      *
      * @return the contentType value
      */
@@ -109,7 +109,7 @@ public class SecretBundle extends com.microsoft.azure.keyvault.models.custom.Sec
     }
 
     /**
-     * Set the contentType value.
+     * Set the content type of the secret.
      *
      * @param contentType the contentType value to set
      * @return the SecretBundle object itself.
@@ -120,7 +120,7 @@ public class SecretBundle extends com.microsoft.azure.keyvault.models.custom.Sec
     }
 
     /**
-     * Get the attributes value.
+     * Get the secret management attributes.
      *
      * @return the attributes value
      */
@@ -129,7 +129,7 @@ public class SecretBundle extends com.microsoft.azure.keyvault.models.custom.Sec
     }
 
     /**
-     * Set the attributes value.
+     * Set the secret management attributes.
      *
      * @param attributes the attributes value to set
      * @return the SecretBundle object itself.
@@ -140,7 +140,7 @@ public class SecretBundle extends com.microsoft.azure.keyvault.models.custom.Sec
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */
@@ -149,7 +149,7 @@ public class SecretBundle extends com.microsoft.azure.keyvault.models.custom.Sec
     }
 
     /**
-     * Set the tags value.
+     * Set application specific metadata in the form of key-value pairs.
      *
      * @param tags the tags value to set
      * @return the SecretBundle object itself.
@@ -160,7 +160,7 @@ public class SecretBundle extends com.microsoft.azure.keyvault.models.custom.Sec
     }
 
     /**
-     * Get the kid value.
+     * Get if this is a secret backing a KV certificate, then this field specifies the corresponding key backing the KV certificate.
      *
      * @return the kid value
      */
@@ -169,7 +169,7 @@ public class SecretBundle extends com.microsoft.azure.keyvault.models.custom.Sec
     }
 
     /**
-     * Get the managed value.
+     * Get true if the secret's lifetime is managed by key vault. If this is a secret backing a certificate, then managed will be true.
      *
      * @return the managed value
      */

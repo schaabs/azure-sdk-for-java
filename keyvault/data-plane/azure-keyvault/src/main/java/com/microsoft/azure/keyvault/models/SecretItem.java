@@ -47,7 +47,7 @@ public class SecretItem {
     private Boolean managed;
 
     /**
-     * Get the id value.
+     * Get secret identifier.
      *
      * @return the id value
      */
@@ -56,7 +56,7 @@ public class SecretItem {
     }
 
     /**
-     * Set the id value.
+     * Set secret identifier.
      *
      * @param id the id value to set
      * @return the SecretItem object itself.
@@ -67,7 +67,7 @@ public class SecretItem {
     }
 
     /**
-     * Get the attributes value.
+     * Get the secret management attributes.
      *
      * @return the attributes value
      */
@@ -76,7 +76,7 @@ public class SecretItem {
     }
 
     /**
-     * Set the attributes value.
+     * Set the secret management attributes.
      *
      * @param attributes the attributes value to set
      * @return the SecretItem object itself.
@@ -87,7 +87,7 @@ public class SecretItem {
     }
 
     /**
-     * Get the tags value.
+     * Get application specific metadata in the form of key-value pairs.
      *
      * @return the tags value
      */
@@ -96,7 +96,7 @@ public class SecretItem {
     }
 
     /**
-     * Set the tags value.
+     * Set application specific metadata in the form of key-value pairs.
      *
      * @param tags the tags value to set
      * @return the SecretItem object itself.
@@ -107,7 +107,7 @@ public class SecretItem {
     }
 
     /**
-     * Get the contentType value.
+     * Get type of the secret value such as a password.
      *
      * @return the contentType value
      */
@@ -116,7 +116,7 @@ public class SecretItem {
     }
 
     /**
-     * Set the contentType value.
+     * Set type of the secret value such as a password.
      *
      * @param contentType the contentType value to set
      * @return the SecretItem object itself.
@@ -127,7 +127,7 @@ public class SecretItem {
     }
 
     /**
-     * Get the managed value.
+     * Get true if the secret's lifetime is managed by key vault. If this is a key backing a certificate, then managed will be true.
      *
      * @return the managed value
      */

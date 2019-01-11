@@ -1,4 +1,4 @@
-import os, sys, subprocess, re
+import os, sys, subprocess, re, argparse
 from distutils.dir_util import copy_tree, remove_tree
 
 # Need python 3.6 for new subprocess API
@@ -6,14 +6,20 @@ MIN_PYTHON = (3, 6)
 if sys.version_info < MIN_PYTHON:
     sys.exit("Python %s.%s or later is required.\n" % MIN_PYTHON)
 
+args = argparse.ArgumentParser()
+args.add_argument('--spec', type=str, required=True, help='Path to the azure keyvault data-plane rest spec readme.md (can be local or raw.githubusercontent.com link)')
+args.add_argument('--verbose', required = False, default=False, action='store_true', help='indicates that all diagnostic messages should be output')
+args.add_argument('--tag', type=str, required=False, default=None, help='Autorest tag to use, if any, for example package-7.1-preview')
+parsed_args = args.parse_args(sys.argv[1:])
+
 # Configuration
-verbose = True
+source_rest_spec = parsed_args.spec
+verbose = parse_args.verbose
+autorest_tag = parsed_args.tag
+
 autorest_target_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), "tmp")
-swagger_source_branch = "keyvault_preview" # Source branch in swagger repo to generate from
-autorest_tag = "package-7.0-preview" # Autorest tag to use, if any
 run_autorest = True # If false, assumes that we just need to repair generated code that is already in tree!
 fix_generated_code = True # if false, assumes that we just need to run autorest
-source_rest_spec = "https://raw.githubusercontent.com/Azure/azure-rest-api-specs/%s/specification/keyvault/data-plane/readme.md" % swagger_source_branch # Builds the URL to Swagger readme from branch
 autorest_cmd = "autorest --java %s --azure-libraries-for-java-folder=%s" % (source_rest_spec, autorest_target_dir)
 
 if autorest_tag is not None:
@@ -22,12 +28,12 @@ if autorest_tag is not None:
 # Constant values
 CODE_TARGET_DIRECTORY = os.path.join(os.path.dirname(os.path.realpath(__file__)), "azure-keyvault", "src", "main", "java", "com", "microsoft", "azure", "keyvault")
 CUSTOM_MODEL_DIR = os.path.join(CODE_TARGET_DIRECTORY, "models", "custom")
-WEBKEY_REPLACE_MODELS = ['JsonWebKey', 'JsonWebKeyEncryptionAlgorithm', 'JsonWebKeyOperation', 'JsonWebKeySignatureAlgorithm', 'JsonWebKeyType']
+WEBKEY_REPLACE_MODELS = ['JsonWebKey', 'JsonWebKeyEncryptionAlgorithm', 'JsonWebKeyOperation', 'JsonWebKeySignatureAlgorithm', 'JsonWebKeyType', 'JsonWebKeyCurveName']
 WEBKEY_NAMESPACE = 'com.microsoft.azure.keyvault.webkey'
 CUSTOM_MODEL_NAMESPACE = 'com.microsoft.azure.keyvault.models.custom'
 MODEL_NAMESPACE = 'com.microsoft.azure.keyvault.models'
 FILES_TO_REMOVE = [
-    'azure-keyvault/models/%s.java' % model for model in WEBKEY_REPLACE_MODELS
+    'azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/%s.java' % model for model in WEBKEY_REPLACE_MODELS
 ]
 FILES_TO_REMOVE.append('azure-keyvault/implementation/package-info.java')
 
@@ -45,7 +51,7 @@ def move_generated_code(autorest_target_dir, verbose):
 
     # move (gen_directory)\azure-keyvault\* --> ./azure-keyvault\src\main\java\com\microsoft\azure\keyvault
     print("Replacing old generated code")
-    copy_tree(os.path.join(autorest_target_dir, "azure-keyvault"), CODE_TARGET_DIRECTORY)
+    copy_tree(os.path.join(autorest_target_dir, "azure-keyvault", "src", "main", "java", "com", "microsoft", "azure", "keyvault"), CODE_TARGET_DIRECTORY)
 
     print("Removing temporary generated files")
     remove_tree(autorest_target_dir)

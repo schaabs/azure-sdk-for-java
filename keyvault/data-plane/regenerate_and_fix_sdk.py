@@ -14,7 +14,7 @@ parsed_args = args.parse_args(sys.argv[1:])
 
 # Configuration
 source_rest_spec = parsed_args.spec
-verbose = parse_args.verbose
+verbose = parsed_args.verbose
 autorest_tag = parsed_args.tag
 
 autorest_target_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), "tmp")
